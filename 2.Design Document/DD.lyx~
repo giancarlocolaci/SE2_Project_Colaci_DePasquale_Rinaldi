@@ -1,0 +1,6084 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{pdflscape}
+\usepackage{courier}
+%\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage{listings}
+\lstset{columns=fullflexible}
+
+\usepackage{charter}
+
+\usepackage{xspace}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+
+% Definizione intestazioni e pie' di pagina
+\usepackage{fancyhdr}
+
+% _____________________________
+\lstdefinelanguage{JS}{
+keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+keywordstyle=\color{blue}\bfseries,
+ndkeywords={class, export, boolean, throw, implements, import, this},   ndkeywordstyle=\color{darkgray}\bfseries,
+identifierstyle=\color{black},
+sensitive=false,   
+comment=[l]{//},   
+morecomment=[s]{/*}{*/},   
+commentstyle=\color{purple}\ttfamily,   
+stringstyle=\color{red}\ttfamily,   
+morestring=[b]',   
+morestring=[b]" 
+}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,  
+language=JS,
+aboveskip=3mm,   
+belowskip=3mm,   
+showstringspaces=false,   
+columns=flexible,   
+basicstyle={\small\ttfamily},   
+numbers=none,   
+numberstyle=\tiny\color{gray},   
+keywordstyle=\color{blue},   
+commentstyle=\color{dkgreen},   
+stringstyle=\color{mauve},   
+breaklines=true,   
+breakatwhitespace=true,   
+tabsize=3 }
+
+% _____________________________
+\end_preamble
+\use_default_options true
+\begin_modules
+InStar
+graphicboxes
+fix-cm
+fixltx2e
+fixme
+customHeadersFooters
+pdfform
+\end_modules
+\maintain_unincluded_children false
+\begin_forced_local_layout
+Format 60
+Style "In Preamble"
+	Category "FrontMatter"
+	Margin Static
+	LatexType Paragraph
+	InTitle 0
+	InPreamble 1
+	TocLevel -1000
+	NeedProtect 0
+	KeepEmpty 0
+	NextNoIndent 0
+	CommandDepth 0
+	LatexName "dummy"
+	ItemCommand item
+	LabelType No_Label
+	EndLabelType No_Label
+	ParagraphGroup "0"
+	ParIndent MM
+	ParSkip 0.4
+	ItemSep 0
+	TopSep 0
+	BottomSep 0
+	LabelBottomSep 0
+	ParSep 0
+	NewLine 1
+	Align Block
+	AlignPossible Block, Center, Layout, Left, Right
+	FreeSpacing 0
+	PassThru 0
+	ParbreakIsNewline 0
+	RefPrefix OFF
+	HTMLLabelFirst 0
+	HTMLStyle
+div.standard {
+margin-bottom: 2ex;
+}
+	EndHTMLStyle
+	HTMLForceCSS 0
+	HTMLTitle 0
+	Spellcheck 1
+	ForceLocal 1
+End
+Style "In Title"
+	Category "FrontMatter"
+	Margin Static
+	LatexType Paragraph
+	InTitle 1
+	InPreamble 0
+	TocLevel -1000
+	NeedProtect 0
+	KeepEmpty 0
+	NextNoIndent 0
+	CommandDepth 0
+	LatexName "dummy"
+	ItemCommand item
+	LabelType No_Label
+	EndLabelType No_Label
+	ParagraphGroup "0"
+	ParIndent MM
+	ParSkip 0.4
+	ItemSep 0
+	TopSep 0
+	BottomSep 0
+	LabelBottomSep 0
+	ParSep 0
+	NewLine 1
+	Align Block
+	AlignPossible Block, Center, Layout, Left, Right
+	FreeSpacing 0
+	PassThru 0
+	ParbreakIsNewline 0
+	RefPrefix OFF
+	HTMLLabelFirst 0
+	HTMLStyle
+div.standard {
+margin-bottom: 2ex;
+}
+	EndHTMLStyle
+	HTMLForceCSS 0
+	HTMLTitle 0
+	Spellcheck 1
+	ForceLocal 1
+End
+\end_forced_local_layout
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\rightmargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+HRule}{
+\backslash
+rule{
+\backslash
+linewidth}{0.5mm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsc{
+\backslash
+LARGE Politecnico di Milano}
+\backslash
+
+\backslash
+[1.5cm] 
+\backslash
+textsc{
+\backslash
+Large PowerEnjoy}
+\backslash
+
+\backslash
+[0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsc{
+\backslash
+Large Software Engineering 2}
+\backslash
+
+\backslash
+[0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+HRule 
+\backslash
+
+\backslash
+[0.4cm] { 
+\backslash
+huge 
+\backslash
+bfseries Design Document}
+\backslash
+
+\backslash
+[0.4cm] 
+\backslash
+HRule 
+\backslash
+
+\backslash
+[1.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth} 
+\backslash
+begin{flushleft} 
+\backslash
+large 
+\backslash
+emph{Authors:}
+\backslash
+
+\backslash
+ Giancarlo 
+\backslash
+textsc{Colaci} 
+\backslash
+newline Giulio 
+\backslash
+textsc{De Pasquale} 
+\backslash
+newline Francesco 
+\backslash
+textsc{Rinaldi} 
+\backslash
+end{flushleft} 
+\backslash
+end{minipage} ~ 
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth} 
+\backslash
+begin{flushright} 
+\backslash
+large 
+\backslash
+emph{Supervisor:} 
+\backslash
+
+\backslash
+ Elisabetta 
+\backslash
+textsc{De Nitto} 
+\backslash
+end{flushright} 
+\backslash
+end{minipage}
+\backslash
+
+\backslash
+[3cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename res/img/logopm.pdf
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+large 
+\backslash
+today}
+\backslash
+
+\backslash
+[3cm]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{} 
+\backslash
+thispagestyle{empty} 
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+This document describes design process for PowerEnjoy project based on the
+ requirements described in the RASD.
+ It is divided into four sections, following 
+\shape italic
+IEEE
+\shape default
+ standard:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Architecture Design
+\series default
+, which describes the structure of the system, highlighting software elements
+ and relations among them and their properties;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Data Design
+\series default
+, which describes the chosen data structures, dictated by attributes and
+ relationships among data objects;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Interface Design
+\series default
+, which describes either internal or external program interfaces;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Procedural Design
+\series default
+, which describes procedural details using graphical notations that facilitates
+ translation to code.
+\end_layout
+
+\begin_layout Subsection
+Purpose
+\end_layout
+
+\begin_layout Standard
+The purpose of this document, the Design Document, is to give more technical
+ details than the RASD about PowerEnjoy system.
+ In more detail, this document is addressed to software developers to let
+ them better understand what is to be built and how it is expected to be
+ done.
+ The main goal of this document is to completely describe the system-to-be
+ by detecting and describing the adopted architectural style, the high-level
+ components of the software-to-be and how these components are distributed
+ on the architecture's tiers and how they communicate and interact with
+ each other, according to the dictates and the guide-lines provided by the
+ RASD.
+\end_layout
+
+\begin_layout Subsection
+Scope
+\end_layout
+
+\begin_layout Standard
+The aim of this project is to develop a web/mobile application for PowerEnjoy,
+ in order to let any registered and active user to reserve a car nearby
+ and drive it in a simple and effective way.
+ Thanks to a smarter uniform distribution of cars in the city that maximizes
+ the probability to find a car nearby and to our competitive prices and
+ some special discount, every user will experience a totally new feeling
+ of freedom and will enjoy saving while driving.
+ No car parking ticket.
+ No refuelling.
+ No road tax.
+ No hidden costs.
+ PowerEnjoy will make it possible.
+\end_layout
+
+\begin_layout Subsection
+Definitions, Acronyms, Abbreviations
+\end_layout
+
+\begin_layout Standard
+Below there are definitions of some terms that will be used in the document,
+ in order to avoid any ambiguity in their use and their understanding.
+\end_layout
+
+\begin_layout Description
+API: Application Programming Interface; it is a common way to communicate
+ with another system.
+ 
+\end_layout
+
+\begin_layout Description
+DBMS: DataBase Management System, a software that control the creation,
+ maintenance and use of a database.
+ (e.g.
+ MySQL)
+\end_layout
+
+\begin_layout Description
+DD: Design Document.
+\end_layout
+
+\begin_layout Description
+EJB: Enterprise JavaBeans, a managed server-side component architecture
+ for modular construction of enterprise applications.
+\end_layout
+
+\begin_layout Description
+
+\shape italic
+EJB
+\begin_inset space ~
+\end_inset
+
+Container
+\shape default
+: a software that implements Sun EJB specifications in order to correctly
+ manage session and entity beans.
+\end_layout
+
+\begin_layout Description
+
+\shape italic
+Entity
+\begin_inset space ~
+\end_inset
+
+bean
+\shape default
+: a distributed object that have persistent state.
+\end_layout
+
+\begin_layout Description
+JavaBeans
+\begin_inset space ~
+\end_inset
+
+Components: Objects that act as temporary data stores for the pages of an
+ application.
+\end_layout
+
+\begin_layout Description
+JAX-RS: Java API for RESTful Web Services, a Java programming language API
+ specification that provides support in creating web services according
+ to the Representational State Transfer (REST) architectural pattern.
+\end_layout
+
+\begin_layout Description
+JDBC: Java Database Connectivity, a Java API that allows the application
+ to communicate with a database.open source database manager system, a software
+ capable of managing data.
+\end_layout
+
+\begin_layout Description
+JSF: JavaServer Faces, a Java specification for building component-based
+ user interfaces for web applications.
+\end_layout
+
+\begin_layout Description
+JSP
+\begin_inset space \space{}
+\end_inset
+
+Pages: text documents that contain two types of text: static data, which
+ can be expressed in any text-based format (such as HTML, SVG, WML, and
+ XML), and JSP elements, which construct dynamic content.
+\end_layout
+
+\begin_layout Description
+HTML: HyperText Markup Language, a markup language for building web pages.
+\end_layout
+
+\begin_layout Description
+HTTP: Hypertext Transfer Protocol, an application protocol used by web browsers.
+\end_layout
+
+\begin_layout Description
+MVC: Model View Controller.
+\end_layout
+
+\begin_layout Description
+MySQL: open source database manager system, a software capable of managing
+ data.
+\end_layout
+
+\begin_layout Description
+RASD: Requirements Analysis and Specifications Document.
+\end_layout
+
+\begin_layout Description
+
+\shape italic
+URL
+\shape default
+: Uniform Resource Locator.
+\end_layout
+
+\begin_layout Description
+
+\shape italic
+Push
+\begin_inset space \space{}
+\end_inset
+
+notification
+\shape default
+: it is a notification sent to a smartphone using the mobile application,
+ so it must be installed.
+\end_layout
+
+\begin_layout Description
+Push
+\begin_inset space \space{}
+\end_inset
+
+service: it is a service that allows to send push notifications with own
+ API.
+\end_layout
+
+\begin_layout Description
+REST: REpresantional State Transfer.
+\end_layout
+
+\begin_layout Description
+RESTful: REST with no session.
+\end_layout
+
+\begin_layout Description
+UX: User eXperience.
+\end_layout
+
+\begin_layout Description
+UI: User Interface.
+\end_layout
+
+\begin_layout Description
+BCE: Business Controller Entity.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Reference documents 
+\end_layout
+
+\begin_layout Itemize
+Requirements Analysis and Specification Document produced before: [RASD.pdf]
+\end_layout
+
+\begin_layout Itemize
+Specification Document: [ASSIGNMENTS AA 2016-2017.pdf] 
+\end_layout
+
+\begin_layout Subsection
+Document Structure
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Introduction
+\series default
+: this section introduces the design document.
+ It contains a justification of his utility and indications on which parts
+ are covered in this document that are not covered by RASD.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Architecture Design
+\series default
+: this section is divided into different parts.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\shape italic
+Overview
+\shape default
+: this sections explains the division in tiers of our application.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+High level components and their interaction
+\shape default
+: this sections gives a global view of the components of the application
+ and how they communicate.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Component view
+\shape default
+: this sections gives a more detailed view of the components of the applications.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Deploying view
+\shape default
+: this section shows the components that must be deployed to have the applicatio
+n running correctly.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Runtime view
+\shape default
+: this section shows the course of the different tasks of our application
+ through several sequence diagrams .
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Component interfaces
+\shape default
+: this section shows the interfaces between the components.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Selected architectural styles and patterns
+\shape default
+: this section explain the architectural choices taken during the creation
+ of the application.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Other design decisions 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Algorithms Design
+\series default
+: this section describes the most critical parts via some algorithms.
+ Pseudo code is used in order to hide unnecessary implementation details
+ in order to focus on the most important parts.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+User Interface Design
+\series default
+: this section presents mockups and user experience explained via UX and
+ BCE diagrams.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Requirements Traceability
+\series default
+: this section aims to explain how the decisions taken in the RASD are linked
+ to design elements.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Appendix
+\series default
+: in this section will be listed the different tools we used and the hours
+ of work spent by each member of the team.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Architectural Design
+\end_layout
+
+\begin_layout Subsection
+Overview
+\end_layout
+
+\begin_layout Standard
+The PowerEnjoy system will be developed on the Java 2 Enterprise Edition
+ platform, one of the most important technology used to build large scale,
+ distributed, component-based, web-enabled and multi-tier applications.
+ J2EE provides also robustness, efficiency and 
+\shape italic
+portability
+\shape default
+ of code because it is based on Java technology and standard-based Java
+ programming APIs: in this way, we will be able to “write once” our application
+ and “run it anywhere”.
+ The system will be designed according to the traditional multi-tier architectur
+e, in order to guarantee:
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+flexibility
+\shape default
+: by separating the business logic of an application from its presentation
+ logic, a multi-tier architecture makes the application much more flexible
+ to changes;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+maintainability
+\shape default
+: because of their independence and the different technology used in each
+ layer, changes should have no effect on any other layer and can be managed
+ by independent teams with different skills.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+reusability
+\shape default
+: separating the application into multiple layers makes it easier to implement
+ re-usable components.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+scalability
+\shape default
+: a multi-tier architecture allows distribution of application components
+ across multiple servers thus making the system much more scalable 
+\end_layout
+
+\begin_layout Standard
+In detail, PowerEnjoy architecture will be made up of four logical levels:
+ the 
+\series bold
+Client
+\series default
+ tier, the 
+\series bold
+Web
+\series default
+ tier, the 
+\series bold
+Business
+\series default
+ tier and the 
+\series bold
+EIS
+\series default
+ tier.
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+Client
+\series default
+ tier consists of application clients that make 
+\shape italic
+requests
+\shape default
+ to the server, which processes the requests and returns a 
+\shape italic
+response
+\shape default
+ back to the client.
+ The Client tier is accessible via 
+\shape italic
+mobile application
+\shape default
+ (that interacts directly with the application server via RESTful API) or
+ by a 
+\shape italic
+web browser
+\shape default
+ (that run JavaScript and apply Cascading Style Sheets (CSS) before interpreting
+ pages marked up with HTML), and it interacts with the Web tier through
+ an HTTP connection, eventually sending data provided by the user.
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+Web
+\series default
+ tier consists of components implemented with JEE technology that handle
+ the interaction between clients and the business tier.
+ Its main tasks are collect HTTP requests from users of the client interface
+ and return appropriate anwers with HTML pages, generated with the data
+ received from the components in the business tier.
+ 
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+Business
+\series default
+ tier consists of Enterprise JavaBean (EJB), software components that encapsulat
+e all the logic of an application.
+ This tier uses the Java Persistence API (JPA) to access the database, abstracti
+ng the relational model implemented by the database in a model of data objects,
+ in order to allow the interaction with the application.
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+EIS
+\series default
+ tier consists of a Database Management System (DBMS) in charge of create,
+ manipulate, query and extract data over a database.
+ The business tier uses the Java Database Connectivity (JDBC) to have access
+ to the resources located on the database.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/MultiTier Architecture.png
+	width 85text%
+	height 85theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+MultiTier Architecture
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/HardwareRepresentation.png
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+	scaleBeforeRotation
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hardware Representation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+High level components and their interaction
+\end_layout
+
+\begin_layout Standard
+The high level components architecture is composed of different elements.
+ The client can initiate the communication with the server from his mobile
+ application or from the webpage of the application.
+ This communication is made in a synchronous way since the client, who initiates
+ the communication, has to wait the answer of the application that acknowledge
+ him that his request has been taken into account.
+ The application will receive two kinds of requests from the client: direct
+ ones, if he's using the mobile application, or redirected ones by the webserver
+, if he's using the web browser.
+ The application will later send an asynchronous message to the client to
+ specifiy the status of his reservation.
+ The application communicates also with another type of component, the cars.
+ The application can send synchronous messages to the cars to check their
+ status and eventually reserve one of them for each user or manage any kind
+ of maintenance.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+The interactions between the main components are shown in figure: 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/HighLevel Components.png
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+High Level Components
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Component view
+\end_layout
+
+\begin_layout Standard
+We adopted a 
+\shape italic
+top-down
+\shape default
+ approach to separate, at least from a logical point of view, different
+ set of functionalities.
+ Once the system was decomposed into several sub-systems, we adopted a 
+\shape italic
+bottom-up
+\shape default
+ approach in order to create more modular and reusable components.
+ Here are listed the most relevant components the system has been split
+ into.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+PowerEnjoyApp GUI
+\series default
+: this is the graphic interface which let the user send request to the server
+ and receive response via mobile application;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+PowerEnjoyWeb GUI
+\series default
+: this is the graphic interface which let the user send request to the server
+ and receive response via web browser;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Authentication Manager
+\series default
+: this is the component responsible for the customer registration and login
+ system.
+ It handles activities such as creating a new customer account, log into
+ the system or deleting an existing account;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+AccountInformation Manager
+\series default
+: this is the component responsible for the customer profile management.
+ It handles activities such as editing personal and billing data, enabling/disab
+ling money saving option and consulting reservation history;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+CheckAvailability Manager
+\series default
+, this is the component responsible for searching available cars in a specific
+ location;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Reservation Manager
+\series default
+: this is the component that manages each reservation.
+ It handles activities such as creating a new reservation, checking the
+ active reservation information (such as the remaining time until it expires,
+ the reserved car's position and status or the elapsed rental time) and
+ terminating the active ones;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Car Manager
+\series default
+: this is the component that check and manage the status of each car by
+ communicating with them through the ADS of each present on each car.
+ If a car needs any kind of maintenance, it will send a request to an external
+ maintenance service;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+ADS_Application Manager
+\series default
+: this is the component which guarantee the correct communication between
+ the Server and the ADS Application installed on each ADS on each electric
+ car; 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Payment Manager
+\series default
+: this is the component that calculates the fees for the rides at the end
+ of each reservation and send a payment request to an external service;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Data Manager
+\series default
+: this is the component where the data is managed and viewed;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Notification Manager
+\series default
+: this is the component that manages all the notifications.
+\end_layout
+
+\begin_layout Standard
+Our application will use Google Maps API to manage information about the
+ actors' position.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+The interactions between the main components are shown in figure:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/ComponentView.png
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Component View
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+In this representation, in order to avoid redundancy due a duplication of
+ the same elements, we decide to use a different color for the actors to
+ enlight the fact that only an active user can have the possibility to reserve
+ a car.
+\end_layout
+
+\begin_layout Subsection
+Deployment view
+\end_layout
+
+\begin_layout Standard
+In this section in shown how the software components are distributed with
+ respect to the hardware resources available in the system.
+ The mobile applications communicate directly with application server via
+ RESTful API while the browser applications communicate with the Web server
+ that receives users' requests, interacts with the Business server and provides
+ HTML pages in order to start the user experience.
+ The system can retrieve information from each car communicating with their
+ ADS via RESTful API.
+ The Business server contains the application logic and the modules that
+ handle the main functionalities of the system.
+ Every module is accessible only by the allowed users.
+ All the data needed for the operations handled by the modules are retrieved
+ from the database in the Data server.
+ The various interactions with the database are monitored by the DBMS in
+ order to guarantee the ACID properties of the database.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/DeploymentView.png
+	width 76text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Deployment View
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Runtime view
+\end_layout
+
+\begin_layout Standard
+In this section are explained through Sequence diagrams some of the most
+ relevant interactions between components and actors of the system.
+ Like in the RASD document, some assumptions are made in order to simplify
+ the representation and clarify some aspects; by the way, some of the most
+ important features, if considered implicit in a Sequence diagram, are explicitl
+y represented in another one.
+\end_layout
+
+\begin_layout Subsubsection*
+Login Sequence Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Sequence Diagrams/login.png
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Login Sequence Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Registration Sequence Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Sequence Diagrams/registration.png
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Registration Sequence Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Check Cars' Availability Sequence Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Sequence Diagrams/availability.png
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Check Cars’ Availability Sequence Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Modify Personal Information Sequence Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Sequence Diagrams/editpersonalinfo.png
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modify Personal Information Sequence Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Car Reservation Sequence Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Sequence Diagrams/reservecar.png
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Car Reservation Sequence Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Car Unlock Sequence Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Sequence Diagrams/opencar.png
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Car Unlock Sequence Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Car Rental Sequence Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Sequence Diagrams/rental.png
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Car Rental Sequence Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Component interfaces
+\end_layout
+
+\begin_layout Standard
+This section shows what are the interfaces that the system provides to the
+ world, defining the functionalities they offer and the needed inputs.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Authentication Manager
+\end_layout
+
+\begin_layout Standard
+Functions implemented by 
+\series bold
+Authentication Manager
+\series default
+:
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{register}
+\end_layout
+
+\end_inset
+
+: This function creates a new entity 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{user}
+\end_layout
+
+\end_inset
+
+ in the system with all the information provided by the user.
+ If the entered data are correct, an email is sent to the user address to
+ confirm the correct registration to the service.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{login}
+\end_layout
+
+\end_inset
+
+: This function allows any registered user to log into the system using
+ his username and password.
+ If the credentials are correct, the function returns a token to be used
+ in the future requests to identify the user.
+ Otherwise, an error is returned.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+AccountInformation Manager
+\end_layout
+
+\begin_layout Standard
+Functions implemented by 
+\series bold
+AccountInformation Manager
+\series default
+:
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{edit
+\backslash
+_profile}
+\end_layout
+
+\end_inset
+
+: This function allows registered users to edit their profile information.
+ 
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{enable
+\backslash
+_mso}
+\end_layout
+
+\end_inset
+
+: This function allows registered users to enable the money saving option.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{disable
+\backslash
+_mso}
+\end_layout
+
+\end_inset
+
+: This function allows registered users to disable the money saving option.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{consult
+\backslash
+_history}
+\end_layout
+
+\end_inset
+
+: This function allows registered users to consult their reservation history.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+CheckAvailability Manager
+\end_layout
+
+\begin_layout Standard
+Functions implemented by 
+\series bold
+CheckAvailability Manager
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_user
+\backslash
+_position}
+\end_layout
+
+\end_inset
+
+: This function will retrieve the information about the user's position
+ through the Google Maps API.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_availability}
+\end_layout
+
+\end_inset
+
+: This function will send a request to the Car Manager in order to retrieve
+ all the information about the cars' location and status nearby the current
+ user.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{show
+\backslash
+_map}
+\end_layout
+
+\end_inset
+
+: This function will first call the other function written above and then
+ will send the information retrieved back to the user, showing him on a
+ map his position and the location of the available cars very near to him.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Reservation Manager
+\end_layout
+
+\begin_layout Standard
+Functions implemented by 
+\series bold
+Reservation Manager
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_user
+\backslash
+_position}
+\end_layout
+
+\end_inset
+
+: This function will retrieve the information about the user's position
+ through the Google Maps API.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_reservability}
+\end_layout
+
+\end_inset
+
+: This function will send a request to the Car Manager in order to check
+ if the current user can effectively reserve the selected car.
+ 
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_terminabiity}
+\end_layout
+
+\end_inset
+
+: This function will send a request to the Car Manager in order to check
+ if the current user can effectively terminate the active reservation or
+ rent.
+ 
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{start
+\backslash
+_reservation}
+\end_layout
+
+\end_inset
+
+: This function create a new istance of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{reservation}
+\end_layout
+
+\end_inset
+
+.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{end
+\backslash
+_reservation}
+\end_layout
+
+\end_inset
+
+: This function will first 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_terminabiity}
+\end_layout
+
+\end_inset
+
+ of the active reservation and only after receiving an affirmative response
+ back it will end the current istance of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{reservation}
+\end_layout
+
+\end_inset
+
+.
+ It will also call 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_reservation
+\backslash
+_status}
+\end_layout
+
+\end_inset
+
+ and it will send a request to the Payment Manager with these last information
+ retrieved.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{start
+\backslash
+_rent}
+\end_layout
+
+\end_inset
+
+: This function create a new istance of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{rent}
+\end_layout
+
+\end_inset
+
+.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{end
+\backslash
+_rent}
+\end_layout
+
+\end_inset
+
+: This function will first 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_terminabiity}
+\end_layout
+
+\end_inset
+
+ of the active rent and only after receiving an affirmative response back
+ it will end the current istance of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{rent}
+\end_layout
+
+\end_inset
+
+.
+ It will also call 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_rent
+\backslash
+_status}
+\end_layout
+
+\end_inset
+
+ and it will send a request to the Payment Manager with these last information
+ retrieved.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_reservation
+\backslash
+_status}
+\end_layout
+
+\end_inset
+
+: This function will retrieve all the information about the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{reservation}
+\end_layout
+
+\end_inset
+
+ and it will send them back to the user.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_rent
+\backslash
+_status}
+\end_layout
+
+\end_inset
+
+: This function will retrieve all the information about the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{rent}
+\end_layout
+
+\end_inset
+
+ and it will send them back to the user.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Car Manager
+\end_layout
+
+\begin_layout Standard
+Functions implemented by 
+\series bold
+Car Manager
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{request
+\backslash
+_information}
+\end_layout
+
+\end_inset
+
+: This function will send a request to the ADS_Application Manager in order
+ to retrieve a complete report about a car or just information about the
+ position and the status of a car.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_reservability}
+\end_layout
+
+\end_inset
+
+: This function will first retrieve more information about the car recevied
+ as input from the Reservation Manager and then will compare its location
+ with the user's position.
+ It will send back a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{confirmation}
+\end_layout
+
+\end_inset
+
+ only if the distance between the two entities is suitable and if the status
+ of the selected car is still 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{available}
+\end_layout
+
+\end_inset
+
+.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_availability}
+\end_layout
+
+\end_inset
+
+: This function will first check the user's position and then will send
+ a request to the ADS_Application Manager in order to retrieve status and
+ position of all the cars stored in the DataBase.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_terminability}
+\end_layout
+
+\end_inset
+
+: This function will first 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{request
+\backslash
+_information}
+\end_layout
+
+\end_inset
+
+ and then will check if all the conditions to end the reservation or the
+ rent are respected (for example if nobody is still in the car, and so on..).
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{contact
+\backslash
+_maintanance
+\backslash
+_service}
+\end_layout
+
+\end_inset
+
+: Every time the Car Manager retrieve information about a car's status,
+ if necessary, it will send a request of maintanance to an external maintanance
+ service through this function.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{perform
+\backslash
+_action}
+\end_layout
+
+\end_inset
+
+: This function will send a request to the ADS_Application of a defined
+ car in order to perform a precise action.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+ADS_Application Manager
+\end_layout
+
+\begin_layout Standard
+Functions implemented by 
+\series bold
+ADS_Application Manager
+\series default
+:
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_status}
+\end_layout
+
+\end_inset
+
+: This function asks the ADS to check the current status (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{available, reserved, in
+\backslash
+_use, unavailable}
+\end_layout
+
+\end_inset
+
+) of the car.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_damages}
+\end_layout
+
+\end_inset
+
+: This function asks the ADS to check the eventual car's damages through
+ the sensors installed in there.
+ If the ADS find any kind of anomalies, it will change the status of the
+ car into 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{unavailable}
+\end_layout
+
+\end_inset
+
+ and will notify it immedetiately to the Server application.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_position}
+\end_layout
+
+\end_inset
+
+: This function asks the ADS to check the car's position.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_passengers}
+\end_layout
+
+\end_inset
+
+: This function asks the ADS the number of passengers actually inside the
+ car.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{check
+\backslash
+_power
+\backslash
+_grid}
+\end_layout
+
+\end_inset
+
+: This function asks the ADS to check if the car is plugged into the power
+ grid.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{send
+\backslash
+_status
+\backslash
+_and
+\backslash
+_position}
+\end_layout
+
+\end_inset
+
+: This function asks the ADS to check status and position of a car and to
+ send these information back to the Server application.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{send
+\backslash
+_report}
+\end_layout
+
+\end_inset
+
+: This function asks the ADS to perform all the actions written above (that
+ is check status, position, eventual damages and the number of eventual
+ passengers inside the car) and to send these information back to the Server
+ application.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{lock
+\backslash
+_doors}
+\end_layout
+
+\end_inset
+
+: This function asks the ADS the lock the car's doors and to change the
+ status of the car into 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{in
+\backslash
+_use}
+\end_layout
+
+\end_inset
+
+.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{unlock
+\backslash
+_doors}
+\end_layout
+
+\end_inset
+
+: This function asks the ADS the unlock the car's doors and to change the
+ status of the car into 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{available}
+\end_layout
+
+\end_inset
+
+.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{start
+\backslash
+_reservation}
+\end_layout
+
+\end_inset
+
+: This function asks the ADS the change the car's status into 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{reserved}
+\end_layout
+
+\end_inset
+
+.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{end
+\backslash
+_reservation}
+\end_layout
+
+\end_inset
+
+: This function asks the ADS the change the car's status into 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{available}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Payment Manager
+\end_layout
+
+\begin_layout Standard
+Functions implemented by 
+\series bold
+Payment Manager
+\series default
+:
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{calculate
+\backslash
+_fees}
+\end_layout
+
+\end_inset
+
+: This function will use all the information retrieved as input about the
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{reservation}
+\end_layout
+
+\end_inset
+
+ or about the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{rent}
+\end_layout
+
+\end_inset
+
+ to calculate the total fees, and then will call 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{contact
+\backslash
+_payment
+\backslash
+_service}
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{contact
+\backslash
+_payment
+\backslash
+_service}
+\end_layout
+
+\end_inset
+
+: This function send a request of payment to the external payment service.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Data Manager
+\end_layout
+
+\begin_layout Standard
+Functions implemented by 
+\series bold
+Data Manager
+\series default
+:
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{store
+\backslash
+_data}
+\end_layout
+
+\end_inset
+
+: This function allows any authorized entity to store data into the DataBase.
+ 
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{retrieve
+\backslash
+_data}
+\end_layout
+
+\end_inset
+
+: This function allows any authorized entity to read data from the DataBase.
+ 
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{delete
+\backslash
+_data}
+\end_layout
+
+\end_inset
+
+: This function allows any authorized entity to delete data from the DataBase.
+ 
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{modify
+\backslash
+_data}
+\end_layout
+
+\end_inset
+
+: This function allows any authorized entity to modify data into the DataBase.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Notification Manager
+\end_layout
+
+\begin_layout Standard
+Functions implemented by 
+\series bold
+Notification Manager
+\series default
+:
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{notify}
+\end_layout
+
+\end_inset
+
+: This function is used by all the authorized entities to communicate between
+ each other.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Other Specifications
+\end_layout
+
+\begin_layout Itemize
+The front-ends of the system (the mobile app and the web application) communicat
+e with the Application Server using the back-end interface implemented as
+ a RESTful interface over the HTTPS protocol.
+\end_layout
+
+\begin_layout Itemize
+The users’ browsers will communicate with the web server via HTTPS requests.
+ Any unencrypted request will be denied.
+\end_layout
+
+\begin_layout Itemize
+The RESTful interface is implemented in the Application server using JAX-RS
+ and uses XML as the data representation language.
+\end_layout
+
+\begin_layout Itemize
+The Application Server communicates with the DBMS via the Java Persistence
+ API over standard network protocols.
+\end_layout
+
+\begin_layout Itemize
+The Application Server is configurable by means of a XML configuration file,
+ that will contain any other setting useful in the implementation phase.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Selected architectural styles and patterns
+\end_layout
+
+\begin_layout Subsubsection
+The Architecture
+\end_layout
+
+\begin_layout Standard
+The architecture of the system has been previously described at higher level.
+\end_layout
+
+\begin_layout Standard
+As we said, we adopted a 
+\series bold
+multi-tier architecture
+\series default
+ in which every tier is hosted on a different machine: the 
+\shape italic
+Client
+\shape default
+ tier is on the pc or smartphone the user access the system from, the 
+\shape italic
+Web
+\shape default
+ tier is hosted on a separate server used only for this purpose, while another
+ server hosts the 
+\shape italic
+Business
+\shape default
+ tier.
+ Finally a last server contains the 
+\shape italic
+Data
+\shape default
+ tier.
+\end_layout
+
+\begin_layout Standard
+This division between all levels has been made in order to allow update
+ and maintenance on a particular tier without affecting the others, and
+ to prevent the whole system to interrupt in case of fault of a component.
+ We also adopted the 
+\shape italic
+thin client
+\shape default
+ paradigm to the interaction between user’s machine and the system: in this
+ way all the application logic is on the application server, which has sufficien
+t computing power and is able to manage concurrency issue efficiently.
+\end_layout
+
+\begin_layout Subsubsection
+The Desing Pattern
+\end_layout
+
+\begin_layout Standard
+The Design pattern used for this system is the 
+\series bold
+Model-View-Controller
+\series default
+ (MVC).
+\end_layout
+
+\begin_layout Standard
+This choice has been made mainly for the flexibility that this pattern provides:
+ the 
+\shape italic
+model
+\shape default
+, the 
+\shape italic
+view
+\shape default
+ and the 
+\shape italic
+controller
+\shape default
+ are separated into different components that can be modified with a minimum
+ impact with respect to the others, helping to achieve a better scalability
+ and offering the possibility to add new functionalities to the system or
+ to apply changes to the code.
+ In more detail:
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+Model
+\series default
+ contains the representation of data and the application logic, so all the
+ functions that manipulates data.
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+View
+\series default
+ makes the model suitable for the user interaction, providing a GUI: every
+ user will access the system and all its functionalities through this component.
+ Furthermore , it provides the possibility to have different representations
+ (or views) for the same data, depending on the user’s preference or on
+ the user’s permissions.
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+Controller
+\series default
+, finally, is responsible for the communication between the View and the
+ Model: in particular it responds to user’s actions and invokes changes
+ on the model.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Other design decisions
+\end_layout
+
+\begin_layout Subsubsection
+Storage of passwords
+\end_layout
+
+\begin_layout Standard
+Users’ password will not be stored in plain-text, but they will be hashed
+ and salted with cryptographic hash functions.
+ This provides a last line of defense in case of data theft.
+\end_layout
+
+\begin_layout Subsubsection
+Google Maps
+\end_layout
+
+\begin_layout Standard
+The system uses an external service, Google Maps, to offload all the geolocaliza
+tion, distance calculation and map visualization processes.
+ The reasons of this choice are the following:
+\end_layout
+
+\begin_layout Itemize
+manually developing maps for each city is not a viable solution due to the
+ tremendous effort of coding and data collection required;
+\end_layout
+
+\begin_layout Itemize
+Google Maps is a well-established, tested and reliable software component
+ already used by millions of people around the world;
+\end_layout
+
+\begin_layout Itemize
+Google Maps offers APIs, enabling programmatic access to its features;
+\end_layout
+
+\begin_layout Itemize
+Google Maps can be used both on the server side (calculation, shortest paths,
+ traffic, incident reporting) and on the client side (map visualization);
+\end_layout
+
+\begin_layout Itemize
+the users feel comfortable with a software component they know and use everyday.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Algorithm Design
+\end_layout
+
+\begin_layout Standard
+In this section we will focus mostly on two important themes: the calculus
+ of the reservations’ and rents’ fees and the uniform redistribution of
+ the cars.
+ It is very important to implement the former in a dynamic and easy-to-change
+ way because of the continuously changing business strategies and it is
+ fundamental to give a lot of attention to the latter because it would considera
+bly increase the quality of the service and incentivize the virtuous behaviours
+ of the user, according to the core values of PowerEnjoy.
+\end_layout
+
+\begin_layout Subsection
+The uniform distribution of cars
+\end_layout
+
+\begin_layout Standard
+Let’s start from the attempt to redistribute in a uniform way the cars into
+ each city.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first kind of solution we will propose is valid from a theoretical point
+ of view, but it is not so suitable to our service.
+ We will explain it anyway to give a deep and better understanding of the
+ problem and of our reasoning.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To guarantee an effectively uniform distribution of the cars, we would act
+ in this way:
+\end_layout
+
+\begin_layout Enumerate
+For each point (intended as a couple of two values: 
+\series bold
+latitude
+\series default
+ and 
+\series bold
+longitude
+\series default
+) inside the city (intended as a 
+\shape italic
+closed ensemble of points
+\shape default
+), we would calculate the minimum distance with the first available car
+ found.
+\end_layout
+
+\begin_layout Enumerate
+Among these minimum distances, we would take in account the greatest one
+ and we would put a new available car in that exact point.
+\end_layout
+
+\begin_layout Standard
+By iterating these two steps, we would guarantee an uniform distribution
+ of cars, starting from a 2-dimensional space (the city) already filled
+ in part with other cars, unmovable.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+However this solution is not a feasible one because it would be necessary
+ to use an ingent calculus power to effectively substain a similar amount
+ of operations.
+ Perhaps it would be possible to achieve the same result with a smaller
+ quantity of points (taken randomly or in a less accurate way) or in the
+ opposite way: we could calculate the maximum distant point from each available
+ car inside the city, and decide to address the user there.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+However this theoretical solution won’t take in account two important facts:
+\end_layout
+
+\begin_layout Enumerate
+the first one is that we cannot address the user into a specific point (intended
+ as above, a couple of 
+\shape italic
+latitude
+\shape default
+ and 
+\shape italic
+longitude
+\shape default
+) but we have to address him/her into a recharging station 
+\shape italic
+near
+\shape default
+ the point, so we will be able anyway only to achieve an 
+\shape italic
+approximately
+\shape default
+ uniform distribution of cars.
+\end_layout
+
+\begin_layout Enumerate
+the second one is that the user will never revolutionize his destination,
+ so we have to address him into a point not so 
+\shape italic
+far
+\shape default
+ from his final destination.
+ 
+\end_layout
+
+\begin_layout Standard
+So we abandoned the utopia of a 
+\shape italic
+perfect
+\shape default
+ uniform distribution of cars, and we focused mainly on the distribution
+ of the car taking in account the PowerEnjoy power grid stations.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+We first ranked them according to the 
+\shape italic
+utility function
+\shape default
+ of the user, in agreement with the point of view of some experts: let’s
+ take in account Milan, the first city in which we offered our service.
+ As showed in figure, we ranked the main zones of Milan giving them a number
+ from 1 to 6, according to the attractivness of that place for our clients.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/milan.png
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ranking of the Power Grid Stations in Milan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we defined a customized radius of 500 - 1000 meters for each power
+ grid station and we covered the whole map of Milan by drawing one circumference
+ for each one of them, according to their given radius, as showed in figure.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/milan2.png
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Radius of the Power Grid Stations in Milan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this way, when a user with the enabled 
+\series bold
+Money Saving Option
+\series default
+ would input his/her final destination at the beginning of a rent, the system
+ would select a special parking area among all the ones present in the city
+ by following these steps:
+\end_layout
+
+\begin_layout Enumerate
+The system will retrieve the latitude and longitude of the final destination
+ of the user;
+\end_layout
+
+\begin_layout Enumerate
+The system will list all the circumferences (with the relative power grid
+ station) that contains that specific point;
+\end_layout
+
+\begin_layout Enumerate
+If there is only one station (distant in the worst case more or less 500-1000
+ meters from the final destination of the user), the system will select
+ it and will provide information about it to the user;
+\end_layout
+
+\begin_layout Enumerate
+If there isn’t any station with free power plugs, a message of error will
+ be showed to the user;
+\end_layout
+
+\begin_layout Enumerate
+If there is more than one station that contains that specific point, the
+ system will select the one with the maximum score according to this formula:
+\begin_inset Formula 
+\[
+score=freeSlot*[(ranking-2)+(10-distance/100)*2]
+\]
+
+\end_inset
+
+where:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+freeSlot
+\series default
+ is the number of available power plugs;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+ranking
+\series default
+ is the number from 1 to 6 assigned to the zone in which is contained the
+ selected power grid station;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+distance
+\series default
+ is the quantity of meters that separates the final destination of the user
+ from the selected power grid station.
+\end_layout
+
+\begin_layout Enumerate
+Example n°1:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The final destination of the user is in piazza delle Meraviglie, 34.
+ At this address correspond the point with latitude x and longitude y, and
+ there are 4 power grid stations that contain it.
+ The power grid stations are characterized by the following information:
+\end_layout
+
+\begin_layout Enumerate
+4 freeSlot, ranking 3, distance from the final destination of the user 500m;
+\end_layout
+
+\begin_layout Enumerate
+3 freeSlot, ranking 4, distance from the final destination of the user 350m;
+\end_layout
+
+\begin_layout Enumerate
+1 freeSlot, ranking 5, distance from the final destination of the user 650m;
+\end_layout
+
+\begin_layout Enumerate
+2 freeSlot, ranking 3, distance from the final destination of the user 250m;
+\end_layout
+
+\begin_layout Standard
+By applying the formula written above, we would obtain the following score:
+\end_layout
+
+\begin_layout Enumerate
+44
+\end_layout
+
+\begin_layout Enumerate
+45
+\end_layout
+
+\begin_layout Enumerate
+10
+\end_layout
+
+\begin_layout Enumerate
+32
+\end_layout
+
+\begin_layout Standard
+The system will select the power grid station n°2 and it will provide informatio
+n to the user about to get there.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Example n°2:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The final destination of the user is in piazza Trifoglio, 12.
+ At this address correspond the point with latitude z and longitude w, and
+ there are 2 power grid stations that contain it.
+ The power grid stations are characterized by the following information:
+\end_layout
+
+\begin_layout Enumerate
+0 freeSlot, ranking 5, distance from the final destination of the user 100m;
+\end_layout
+
+\begin_layout Enumerate
+2 freeSlot, ranking 4, distance from the final destination of the user 450m;
+\end_layout
+
+\begin_layout Standard
+By applying the formula written above, we would obtain the following score:
+\end_layout
+
+\begin_layout Enumerate
+0
+\end_layout
+
+\begin_layout Enumerate
+26
+\end_layout
+
+\begin_layout Standard
+The system will select the power grid station n°2 and it will provide informatio
+n to the user about to get there.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+In this way we would achieve our goal to distribute cars in the smartest
+ way we were able to think about.
+\end_layout
+
+\begin_layout Subsection
+How to calculate the Reservation fees
+\end_layout
+
+\begin_layout Standard
+In this section we will analyze the structure of the code that will handle
+ the payment for the reservation fees.
+\end_layout
+
+\begin_layout Subparagraph*
+calculateReservationFees(Reservation)
+\end_layout
+
+\begin_layout Standard
+\SpecialChar ligaturebreak
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/*   This function will calculate the fees for each reservation entity.
+  Actually, the user can terminate a reservation for free, but in the future
+ if PowerEnjoy would decide to apply a fee for the termination of a reservation,
+ it would be very easy to modify this function.
+ If the user pick up the car, his reservation terminates and the system
+ will create another object 'rent': no fees will be applied to transform
+ a reservation into a rent.
+ On the other hand, if the reservation expires before the user pick up the
+ car, the system will apply to him a fee of one euro.
+ As said before, it would not be difficult in the future also to change
+ this amount of money.
+\end_layout
+
+\begin_layout Plain Layout
+
+*/
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+function calculateReservationFees (Reservation res){
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (res.isExpired()){
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   This function will return a 'true' value if the reservation is expired
+ because of the time.
+\end_layout
+
+\begin_layout Plain Layout
+
+		paymentHandler(res.User, res.expirationFee);
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   This function will send a request of payment to the external payment
+ service with as input the ID of the user and the amount of money.
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+	else {
+\end_layout
+
+\begin_layout Plain Layout
+
+		paymentHandler(res.User, 0);
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   This case covers both the cases in which the user decides to terminate
+ the reservation and in which he unlocks the car's doors.
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+How to calculate the Rent fees
+\end_layout
+
+\begin_layout Standard
+In this section we will analyze the structure of the code that will handle
+ the payment for the reservation fees.
+\end_layout
+
+\begin_layout Subparagraph*
+calculateRentDiscount(Rent, float)
+\end_layout
+
+\begin_layout Standard
+\SpecialChar ligaturebreak
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/*   This function will calculate the eventual discount for each rent entity.
+   */
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+float function calculateRentDiscount(Rent ren, float totalCost){
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+		if (ren.atLeastTwoPassengers()){
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   This function will return a 'true' value if almost two passengers
+ were in the car.
+\end_layout
+
+\begin_layout Plain Layout
+
+		actualCost = actualCost * 0.9;
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   In this way we will apply a 10% of discount to the client.
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (ren.report.batteryLevelAtTheEndOfRent >= 0.5){
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   This function will return the percentage of battery at the end of
+ the rental.
+\end_layout
+
+\begin_layout Plain Layout
+
+		actualCost = actualCost * 0.8;
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   In this way we will apply a 20% of discount to the client.
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (ren.report.MSOactived() && ren.report.finalDestinationNotEmpty()){
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   The first function will return a 'true' value if the user enabled
+ the Money Saving Option at the beginning of his/her rent.
+ The second funtion will return a 'true' value if the user input his/her
+ final destination.
+\end_layout
+
+\begin_layout Plain Layout
+
+		if (ren.carParkedAt(ren.report.specialArea) && ren.carLeftUnderCharge()){
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   The first function will return a 'true' value if the user parked
+ the car in the special area the system provided at the beginning of the
+ rent.
+ The second function will return a 'true' value if the car is left under
+ charge.
+\end_layout
+
+\begin_layout Plain Layout
+
+			actualCost = actualCost * 0.6;
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   In this way we will apply a 40% of discount to the client.
+\end_layout
+
+\begin_layout Plain Layout
+
+		else if (ren.carLeftUnderCharge()){
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   This function will return a 'true' value if the car is left under
+ charge in another recharging area (not the special one provided by the
+ system at the beginning of the rent).
+\end_layout
+
+\begin_layout Plain Layout
+
+			actualCost = actualCost * 0.7;
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   In this way we will apply a 30% of discount to the client.
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+	else{
+\end_layout
+
+\begin_layout Plain Layout
+
+		if (ren.carLeftUnderCharge()){
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   This function will return 'true' if the car is left under charge
+ in a recharging area.
+\end_layout
+
+\begin_layout Plain Layout
+
+			actualCost = actualCost * 0.7;
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   In this way we will apply a 30% of discount to the client.
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	return totalCost;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph*
+calculateAdditionalFee(Rent, float)
+\end_layout
+
+\begin_layout Standard
+\SpecialChar ligaturebreak
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/*   This function will calculate the additional fees for each rent entity.
+   */
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+float function calculateAdditionalFee(Rent ren, float totalCost){
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (ren.report.batteryLevelAtTheEndOfRent <= 0.2 ||
+\end_layout
+
+\begin_layout Plain Layout
+
+		ren.report.distanceFromTheNearestPowerGridStationInKm >= 3){
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   The first value is the same explained above
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   The second one is the distance from the nearest power grid station
+ expressed in km
+\end_layout
+
+\begin_layout Plain Layout
+
+		actualCost = actualCost * 1.3;
+\end_layout
+
+\begin_layout Plain Layout
+
+		//   In this way we will apply a 30% of additional fee to the client.
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+return totalCost;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph*
+calculateRentFees(Rent)
+\end_layout
+
+\begin_layout Standard
+\SpecialChar ligaturebreak
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/*   This function will calculate the fees for each rent entity.
+  In this case we have to consider eventual discounts and other additional
+ fees before sending the payment request to the external payment service.
+ It would not be difficult in the future to change some parameters according
+ to the PowerEnjoy policy.
+\end_layout
+
+\begin_layout Plain Layout
+
+*/
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+function calculateRentFees (Rent ren){
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	float totalCost = 0.0;
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	totalCost = ren.report.totalTime * ren.report.pricePerMinute;
+\end_layout
+
+\begin_layout Plain Layout
+
+	// We will first calculate the Total Cost as the multiplication of the
+ Total Time of the Rental and the Actual Price Per Minute.
+ In the future it would be easy to modify them, according to the PowerEnjoy
+ policy.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	totalCost = calculateRentDiscount(ren, totalCost);
+\end_layout
+
+\begin_layout Plain Layout
+
+	// In this way we will apply all the discount.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	totalCost = calulateAdditionalFee(ren, totalCost);
+\end_layout
+
+\begin_layout Plain Layout
+
+	// In this way we will apply all the additional fees.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	paymentHandler(ren.User, totalCost);
+\end_layout
+
+\begin_layout Plain Layout
+
+	//   This function will send a request of payment to the external payment
+ service with as input the ID of the user and the amount of money .
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+User Interface Design
+\end_layout
+
+\begin_layout Standard
+In this section we will provide an overview on how the user interfaces of
+ our system will look like.
+\end_layout
+
+\begin_layout Subsection
+UX Diagram
+\end_layout
+
+\begin_layout Standard
+The UX Diagram shows the interactions between the different screens of the
+ User Interface of the clients.
+\begin_inset Newline linebreak
+\end_inset
+
+The services are both accessible via web and mobile application.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/UX Diagram.png
+	width 100text%
+	height 76theight%
+	keepAspectRatio
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+UX Diagram 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+User UI
+\end_layout
+
+\begin_layout Standard
+The following mockups represent the user UI, regarding both the Web Browser
+ and the Mobile Application interfaces.
+\end_layout
+
+\begin_layout Subsubsection
+Home Page
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/mockup/pc/HomePage.png
+	width 60text%
+	height 60theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Home Page - Web Browser
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Login 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/mockup/mobile/HomePageMobile.png
+	width 60text%
+	height 60theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Login - Mobile Application 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Registration 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/mockup/pc/Registration Page.png
+	width 70text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Registration Page - Web Browser
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/mockup/mobile/RegistrationPageMobile.png
+	width 70text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Registration Page - Mobile Application 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Edit Personal Information
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/mockup/pc/EditPersonalInfo.png
+	width 63text%
+	height 63theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Edit Personal Information - Web Browser
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Edit Billing Information
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/mockup/pc/Edit Billing Information.png
+	width 63text%
+	height 63theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Edit Billing Information - Web Browser
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Enable / Disable the Money Saving Option
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/mockup/mobile/Enable MSO.png
+	width 70text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Enable Money Saving Option - Mobile Application
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/mockup/mobile/Disable MSO.png
+	width 70text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Disable Money Saving Option - Mobile Application
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Start Reservation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/mockup/mobile/Start Reservation.png
+	width 70text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Start Reservation - Mobile Application 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Terminate Reservation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/mockup/mobile/End Reservation.png
+	width 70text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Terminate Reservation - Mobile Application 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Unlock the car
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/mockup/mobile/Unlock Doors.png
+	width 70text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Unlock Car's Doors - Mobile Application 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Lock the car
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/mockup/mobile/Lock Doors.png
+	width 70text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lock Car's Doors - Mobile Application 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Requirements Traceability
+\end_layout
+
+\begin_layout Standard
+In the RASD document we have deﬁned all the system's requirements: in this
+ section we explaine how they map into the design elements deﬁned in this
+ document.
+ 
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="42" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Component (DD)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Requirements (RASD)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1.1 Registration of a guest to the system
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Authentication Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1.2 Login of a user into the system
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Account Information Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1.9 Modify the profile information
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Check Availability Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1.3 Find the location of available cars in a speciﬁed area
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1.4 Book a car with the possibility to cancel the reservation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reservation Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1.6 Be notiﬁed of active reservation status
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1.7 End the rental
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Car Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1.3 Available cars in a speciﬁed area
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1.4 Book a car with the possibility to cancel the reservation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ADS_Application Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1.5 Open his/her reserved car
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1.6 Active reservation status
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Payment Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1.8 Know the total cost at the end of the rental
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1.1 Registration of a guest to the system
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1.2 Login of a user into the system
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Notiﬁcation Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1.6 Be notiﬁed of active reservation status
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Appendix
+\end_layout
+
+\begin_layout Subsection
+Tools used
+\end_layout
+
+\begin_layout Standard
+We used the following tools to produce this document:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+LaTex
+\series default
+ as typesetting system to write this document
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+LyX
+\series default
+ as editor
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Visio Professional
+\series default
+ and 
+\series bold
+draw.io
+\series default
+ to draw all the diagrams
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Something Else
+\end_layout
+
+\begin_layout Subsection
+Hours of work
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/hours.png
+	width 50text%
+	height 50theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

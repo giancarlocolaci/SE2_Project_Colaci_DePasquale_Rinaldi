@@ -1,0 +1,33 @@
+\usepackage[usename]{xcolor}
+
+% Titoli di capitolo con numerazione
+\def\@makechapterhead#1{%
+  \vspace*{6\p@}%
+  {\parindent \z@ \reset@font
+        %\thickhrulefill
+        \par\nobreak
+
+       	{\color{gray} \bfseries \fontsize{60}{65}\selectfont \thechapter}
+       	{\sffamily \hspace{1em} \huge #1}
+
+	\par\nobreak
+        \interlinepenalty\@M
+        %\hrule
+        \vspace*{10\p@}%
+    \vskip 30\p@
+  }}
+
+% Titoli capitolo senza numerazione (e.g. Indice)
+\def\@makeschapterhead#1{%
+  \vspace*{30\p@}%
+  {\parindent \z@ \reset@font
+        %\thickhrulefill
+        \par\nobreak
+       	{\sffamily \huge #1}
+	\par\nobreak
+        \interlinepenalty\@M
+        %\hrule
+        \vspace*{10\p@}%
+    \vskip 30\p@
+  }}
+
