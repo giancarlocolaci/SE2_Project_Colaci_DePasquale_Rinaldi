@@ -1,0 +1,9566 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{pdflscape}
+\usepackage{courier}
+%\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage{listings}
+\lstset{columns=fullflexible}
+
+\usepackage{charter}
+
+\usepackage{xspace}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+
+% Definizione intestazioni e pie' di pagina
+\usepackage{fancyhdr}
+
+% _____________________________
+\lstdefinelanguage{JS}{
+keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+keywordstyle=\color{blue}\bfseries,
+ndkeywords={class, export, boolean, throw, implements, import, this},   ndkeywordstyle=\color{darkgray}\bfseries,
+identifierstyle=\color{black},
+sensitive=false,   
+comment=[l]{//},   
+morecomment=[s]{/*}{*/},   
+commentstyle=\color{purple}\ttfamily,   
+stringstyle=\color{red}\ttfamily,   
+morestring=[b]',   
+morestring=[b]" 
+}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,  
+language=JS,
+aboveskip=3mm,   
+belowskip=3mm,   
+showstringspaces=false,   
+columns=flexible,   
+basicstyle={\small\ttfamily},   
+numbers=none,   
+numberstyle=\tiny\color{gray},   
+keywordstyle=\color{blue},   
+commentstyle=\color{dkgreen},   
+stringstyle=\color{mauve},   
+breaklines=true,   
+breakatwhitespace=true,   
+tabsize=3 }
+
+% _____________________________
+\end_preamble
+\use_default_options true
+\begin_modules
+InStar
+graphicboxes
+fix-cm
+fixltx2e
+fixme
+customHeadersFooters
+pdfform
+\end_modules
+\maintain_unincluded_children false
+\begin_forced_local_layout
+Format 60
+Style "In Preamble"
+	Category "FrontMatter"
+	Margin Static
+	LatexType Paragraph
+	InTitle 0
+	InPreamble 1
+	TocLevel -1000
+	NeedProtect 0
+	KeepEmpty 0
+	NextNoIndent 0
+	CommandDepth 0
+	LatexName "dummy"
+	ItemCommand item
+	LabelType No_Label
+	EndLabelType No_Label
+	ParagraphGroup "0"
+	ParIndent MM
+	ParSkip 0.4
+	ItemSep 0
+	TopSep 0
+	BottomSep 0
+	LabelBottomSep 0
+	ParSep 0
+	NewLine 1
+	Align Block
+	AlignPossible Block, Center, Layout, Left, Right
+	FreeSpacing 0
+	PassThru 0
+	ParbreakIsNewline 0
+	RefPrefix OFF
+	HTMLLabelFirst 0
+	HTMLStyle
+div.standard {
+margin-bottom: 2ex;
+}
+	EndHTMLStyle
+	HTMLForceCSS 0
+	HTMLTitle 0
+	Spellcheck 1
+	ForceLocal 1
+End
+Style "In Title"
+	Category "FrontMatter"
+	Margin Static
+	LatexType Paragraph
+	InTitle 1
+	InPreamble 0
+	TocLevel -1000
+	NeedProtect 0
+	KeepEmpty 0
+	NextNoIndent 0
+	CommandDepth 0
+	LatexName "dummy"
+	ItemCommand item
+	LabelType No_Label
+	EndLabelType No_Label
+	ParagraphGroup "0"
+	ParIndent MM
+	ParSkip 0.4
+	ItemSep 0
+	TopSep 0
+	BottomSep 0
+	LabelBottomSep 0
+	ParSep 0
+	NewLine 1
+	Align Block
+	AlignPossible Block, Center, Layout, Left, Right
+	FreeSpacing 0
+	PassThru 0
+	ParbreakIsNewline 0
+	RefPrefix OFF
+	HTMLLabelFirst 0
+	HTMLStyle
+div.standard {
+margin-bottom: 2ex;
+}
+	EndHTMLStyle
+	HTMLForceCSS 0
+	HTMLTitle 0
+	Spellcheck 1
+	ForceLocal 1
+End
+\end_forced_local_layout
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\rightmargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+HRule}{
+\backslash
+rule{
+\backslash
+linewidth}{0.5mm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsc{
+\backslash
+LARGE Politecnico di Milano}
+\backslash
+
+\backslash
+[1.5cm] 
+\backslash
+textsc{
+\backslash
+Large PowerEnjoy}
+\backslash
+
+\backslash
+[0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsc{
+\backslash
+Large Software Engineering 2}
+\backslash
+
+\backslash
+[0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+HRule 
+\backslash
+
+\backslash
+[0.4cm] { 
+\backslash
+huge 
+\backslash
+bfseries Integration Test Plan Document}
+\backslash
+
+\backslash
+[0.4cm] 
+\backslash
+HRule 
+\backslash
+
+\backslash
+[1.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth} 
+\backslash
+begin{flushleft} 
+\backslash
+large 
+\backslash
+emph{Authors:}
+\backslash
+
+\backslash
+ Giancarlo 
+\backslash
+textsc{Colaci} 
+\backslash
+newline Giulio 
+\backslash
+textsc{De Pasquale} 
+\backslash
+newline Francesco 
+\backslash
+textsc{Rinaldi} 
+\backslash
+end{flushleft} 
+\backslash
+end{minipage} ~ 
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth} 
+\backslash
+begin{flushright} 
+\backslash
+large 
+\backslash
+emph{Supervisor:} 
+\backslash
+
+\backslash
+ Elisabetta 
+\backslash
+textsc{De Nitto} 
+\backslash
+end{flushright} 
+\backslash
+end{minipage}
+\backslash
+
+\backslash
+[3cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename res/img/logopm.pdf
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+large 
+\backslash
+today}
+\backslash
+
+\backslash
+[3cm]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{} 
+\backslash
+thispagestyle{empty} 
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Revision History
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Version
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Author(s)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Summary
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14/01/2017
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Giancarlo Colaci, Giulio De Pasquale, Francesco Rinaldi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Name refactoring
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+08/01/2017
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Giancarlo Colaci, Giulio De Pasquale, Francesco Rinaldi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Initial Release
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection
+Purpose and Scope
+\end_layout
+
+\begin_layout Standard
+The Integration Test Plan Document (
+\series bold
+ITPD
+\series default
+) describes how integration tests are to be performed.
+ The tests here described focus on the information's flow between every
+ module as a whole.
+ Specifically it describes the adopted methodologies ranging from the sets
+ of all tests to be performed to the tools used throughout the whole process.
+ The system will be an optimization of a pre-existing system for renting
+ cars already in use in some cities.
+ The new system will let users to check reservability and status of available
+ cars, rent or reserve them through a mobile or a web application in a more
+ simple and effective way.
+\end_layout
+
+\begin_layout Subsection
+Definitions, Acronyms, Abbreviations
+\end_layout
+
+\begin_layout Standard
+Below there are definitions of some terms that will be used in the document,
+ in order to avoid any ambiguity in their use and their understanding.
+\end_layout
+
+\begin_layout Subsubsection*
+Definitions
+\end_layout
+
+\begin_layout Description
+Component: each of the low level components realizing the functionalities
+ of a subsystem
+\end_layout
+
+\begin_layout Description
+Subsystem: a high-level functional unit of the system
+\end_layout
+
+\begin_layout Description
+Requests: reservations and rents
+\end_layout
+
+\begin_layout Subsubsection*
+Acronyms
+\end_layout
+
+\begin_layout Description
+DBMS: DataBase Management System, a software that control the creation,
+ maintenance and use of a database.
+ (e.g.
+ MySQL)
+\end_layout
+
+\begin_layout Description
+API: Application Programming Interface
+\end_layout
+
+\begin_layout Description
+RASD: Requirement Analysis and Specification Document
+\end_layout
+
+\begin_layout Description
+DD: Design Document
+\end_layout
+
+\begin_layout Description
+MSO: Money Saving Option
+\end_layout
+
+\begin_layout Description
+RMSS: Request Management Subsystem
+\end_layout
+
+\begin_layout Description
+ITPD: Integration Test Plan Document
+\end_layout
+
+\begin_layout Subsection
+Reference documents 
+\end_layout
+
+\begin_layout Itemize
+Requirements Analysis and Specification Document produced before
+\end_layout
+
+\begin_layout Itemize
+Design Document produced before
+\end_layout
+
+\begin_layout Itemize
+Specification Document
+\end_layout
+
+\begin_layout Itemize
+JUnit 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://junit.org/junit4/javadoc/latest/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+JMockit 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://jmockit.org/api1x/overview-summary.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Arquillian
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ http://arquillian.org/guides/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Document Structure
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Introduction
+\series default
+: this section introduces the Integration Test Plan Document.
+ It contains a justification of his utility and its main use.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Integration Strategy
+\series default
+: this section is divided into different parts.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\shape italic
+Entry Criteria
+\shape default
+: This section lists all the prerequisites that need to be met 
+\shape italic
+before
+\shape default
+ any integration testing begins in order achieve valid and worthwhile results.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Elements to be Integrated
+\shape default
+: this sections gives a global view of the components of the application
+ to be integrated, in a consistent way with our design.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Integration Testing Strategy
+\shape default
+: this sections gives a more detailed view of the integration testing approach,
+ such as top‐down, bottom‐up, functional groupings, etc.., and the main reasons
+ behind it.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Component / Subsystem Testing:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Component Testing: this section illustrates how every component will be
+ integrated along in order to constitute a subsystem.
+\end_layout
+
+\begin_layout Itemize
+Subsystem Testing: this section shows the order in which subsystems will
+ be integrated.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Individual Steps and Test Description
+\series default
+: this section describes the type of tests that will be used to verify that
+ the elements integrated perform as expected.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Tools and Test Equipment Required
+\series default
+: this section presents all the tools and test equipment needed to accomplish
+ the integration.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Program Stubs and Test Data Required
+\series default
+: this section aims to identify any program stubs or special test data required
+ for each integration step, based on the testing strategy and test design.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Appendix
+\series default
+: in this section will be listed the different tools we used and the hours
+ of work spent by each member of the team.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\series bold
+Integration Strategy
+\end_layout
+
+\begin_layout Subsection
+Entry Criteria
+\end_layout
+
+\begin_layout Standard
+This section lists all the prerequisites that need to be met 
+\shape italic
+before
+\shape default
+ any integration testing begins in order achieve valid and worthwhile results.
+\end_layout
+
+\begin_layout Standard
+All the classes and methods will be 
+\series bold
+tested
+\series default
+ against several unit tests to detect major faults in algorithms and classes'
+ structure.
+ Each unit test has to cover at least the 90% of lines of code and will
+ be run automatically on each build.
+ However unit testing is not in the scope of this document and will not
+ be specified in further detail.
+\end_layout
+
+\begin_layout Standard
+The whole project will be 
+\series bold
+constantly inspected
+\series default
+ to ensure maintainability, detect possible issues and coding conventions
+ breakages which could increase the testers' effort in next testing phases.
+ Continuous code inspection must be performed using automated tools as much
+ as possible: manual testing should be reserved for the most difficult features
+ to test.
+\end_layout
+
+\begin_layout Standard
+Finally, the 
+\series bold
+documentation
+\series default
+ has to be complete and up-to-date to be used as a reference for integration
+ testing development.
+ In particular, the public interfaces of each class and module should be
+ well referenced.
+ Where necessary, a formal specification language can be used.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+The following documents must be delivered before integration testing can
+ begin:
+\end_layout
+
+\begin_layout Itemize
+
+\shape slanted
+Requirement Analysis and Specification Document of PowerEnjoy
+\end_layout
+
+\begin_layout Itemize
+
+\shape slanted
+Design Document of PowerEnjoy
+\end_layout
+
+\begin_layout Itemize
+
+\shape slanted
+Integration Testing Plan Document of PowerEnjoy
+\end_layout
+
+\begin_layout Subsection
+Elements to be Integrated
+\end_layout
+
+\begin_layout Standard
+The following list represents every component grouped into several subsystems:
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Core Data
+\end_layout
+
+\begin_layout Itemize
+Data Manager
+\end_layout
+
+\begin_layout Itemize
+DataBase Management System
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Account Management
+\end_layout
+
+\begin_layout Itemize
+Authentication Manager
+\end_layout
+
+\begin_layout Itemize
+AccountInformation Manager
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Car Management
+\end_layout
+
+\begin_layout Itemize
+ADS_Application Manager 
+\end_layout
+
+\begin_layout Itemize
+Car Manager
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Request Management
+\end_layout
+
+\begin_layout Itemize
+CheckAvailability Manager 
+\end_layout
+
+\begin_layout Itemize
+Reservation Manager
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Events Handler
+\end_layout
+
+\begin_layout Itemize
+Payment Manager
+\end_layout
+
+\begin_layout Itemize
+Notification Manager
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Interfaces
+\end_layout
+
+\begin_layout Itemize
+Web GUI
+\end_layout
+
+\begin_layout Itemize
+App (Mobile) GUI
+\end_layout
+
+\begin_layout Standard
+For a detailed description of each components function and interaction refer
+ to the 
+\series bold
+Design Document
+\series default
+, section 2.3.
+\end_layout
+
+\begin_layout Subsection
+Integration Testing Strategy
+\end_layout
+
+\begin_layout Standard
+The chosen strategy for the integration testing is the 
+\series bold
+bottom-up
+\series default
+ approach.
+\end_layout
+
+\begin_layout Standard
+It allows the testers to focus on each main component as little as possible
+ since each test will be developed in great detail starting from the inner
+ classes in our specification: from that point on, each component will rely
+ on a strong codebase which reduces the time spent on reviewing the project
+ internals.
+\end_layout
+
+\begin_layout Subsection
+Component / Subsystem Testing
+\end_layout
+
+\begin_layout Standard
+Due to the complex nature of testing an entire system, we planned the integratio
+n testing following two point of views, both of them catalogued through
+ a 
+\series bold
+dependency-driven
+\series default
+ order: the detailed 
+\shape slanted
+component
+\shape default
+ testing and the top-view 
+\shape slanted
+subsystem
+\shape default
+ testing.
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Component Testing
+\end_layout
+
+\begin_layout Standard
+This section illustrates how every component will be integrated along in
+ order to constitute a subsystem.
+\end_layout
+
+\begin_layout Subsubsection*
+Core Data
+\end_layout
+
+\begin_layout Standard
+The first two elements to be integrated are the 
+\series bold
+Data Manager
+\series default
+ and the 
+\series bold
+Database Management System
+\series default
+ components.
+ We start from here because every other component relies on Data Manager
+ to perform queries on the underlying data structure.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Core Data.png
+	width 60text%
+	height 60theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Core Data
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Account Management
+\end_layout
+
+\begin_layout Standard
+The 
+\shape slanted
+Account Management
+\shape default
+ subsystem relies on the 
+\series bold
+Authentication Manager
+\series default
+ and the 
+\series bold
+AccountInformation Manager
+\series default
+.
+ The first one manages the correctness of user data submitted by the clients
+ to provide access to the PowerEnjoy services; the latter, instead, edits
+ and provides access to every account in the DBMS.
+\end_layout
+
+\begin_layout Standard
+They both need the 
+\series bold
+Core Data
+\series default
+ subsystem to operate correctly.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Account Management 1.png
+	width 60text%
+	height 60theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Authentication Manager
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Account Management 2.png
+	width 60text%
+	height 60theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+AccountInformation Manager
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Car Management
+\end_layout
+
+\begin_layout Standard
+The 
+\shape slanted
+Car Management
+\shape default
+ subsystem relies on the 
+\series bold
+ADS_Application Manager
+\series default
+ and the 
+\series bold
+Car Manager
+\series default
+.
+ The 
+\series bold
+ADS_Application Manager 
+\series default
+has to guarantee the correct communication between the 
+\series bold
+Car Manager
+\series default
+ and every ADS installed on each car.
+ The 
+\series bold
+Car Manager
+\series default
+ handles the status of each car by communicating the ADS installed on each
+ car through the 
+\series bold
+ADS_Application Manager
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+They both need the 
+\series bold
+Core Data
+\series default
+ subsystem to operate correctly.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Car Management 1.png
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ADS_Application Manager
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Car Management 2.png
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Car Manager
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Request Management
+\end_layout
+
+\begin_layout Standard
+The 
+\shape slanted
+Request Management
+\shape default
+ subsystem relies on the 
+\series bold
+CheckAvailability Manager
+\series default
+ and the 
+\series bold
+Reservation Manager
+\series default
+.
+ The 
+\series bold
+CheckAvailability Manager 
+\series default
+is responsible for searching available cars in a specific location.
+ The 
+\series bold
+Reservation Manager
+\series default
+ handles each reservation by creating new entries, checking active entries
+ information and terminating active ones.
+\end_layout
+
+\begin_layout Standard
+They both need the 
+\series bold
+Core Data
+\series default
+ and the 
+\series bold
+Car Management
+\series default
+ subsystems to operate correctly.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Reservation Management 1.png
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CheckAvailability Manager
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Reservation Management 2.png
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Reservation Manager
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Events Handler
+\end_layout
+
+\begin_layout Standard
+The 
+\shape slanted
+Event Handler
+\shape default
+ subsystem relies on the 
+\series bold
+Payment Manager
+\series default
+ and the 
+\series bold
+Notification Manager
+\series default
+.
+ The 
+\series bold
+Payment Manager 
+\series default
+calculates the fees for the rides at the end of each reservation and send
+ a payment request to an external service.
+ The 
+\series bold
+Notification Manager
+\series default
+ handles every notification sent by the system to both server and client
+ side.
+\end_layout
+
+\begin_layout Standard
+They both need the 
+\series bold
+Core Data
+\series default
+ and the 
+\series bold
+Request Management
+\series default
+ subsystems to operate correctly.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Events Handler 1.png
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Payment Manager
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Events Handler 2.png
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Notification Manager
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Interfaces
+\end_layout
+
+\begin_layout Standard
+The 
+\shape slanted
+Interface
+\shape default
+ subsystem relies on the 
+\series bold
+App GUI
+\series default
+ and the 
+\series bold
+Web GUI
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+They both need the 
+\series bold
+Request Management 
+\series default
+and
+\series bold
+ Account Management
+\series default
+ subsystems to operate correctly.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Interfaces 1.png
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PowerEnjoyApp GUI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/Interfaces 2.png
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PowerEnjoyWeb GUI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Subsystem Testing
+\end_layout
+
+\begin_layout Standard
+This section shows the order in which subsystems will be integrated.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename res/img/2.4.2.png
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Subsystem Integration Sequence
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\series bold
+Individual Steps and Test Description
+\end_layout
+
+\begin_layout Standard
+This section describes the type of tests that will be used to verify that
+ the elements integrated perform as expected.
+ For each subsytem will be given a view of the main functions implemented,
+ with a short description of the working principles and the expected effects
+ for different inputs.
+ In the Sequence Diagrams shown in the Section 2.5 of the Design Document
+ can be found a detailed representation of the components interaction.
+\end_layout
+
+\begin_layout Subsection
+Account Management
+\end_layout
+
+\begin_layout Standard
+Main functions implemented by the 
+\series bold
+Authentication Manager
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+register(UserData)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function creates a new 
+\family typewriter
+User
+\family default
+ instance in the system with all the information provided by the user during
+ the registration phase.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An incomplete / duplicate set of information about the new user
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A full set of information about the new user (
+\shape italic
+name
+\shape default
+, 
+\shape italic
+surname
+\shape default
+, 
+\shape italic
+address
+\shape default
+, 
+\shape italic
+email
+\shape default
+, 
+\shape italic
+username
+\shape default
+, 
+\shape italic
+password
+\shape default
+, ...)
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The user data is correctly inserted in the database.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+login(Credentials)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function allows any registered user to log into the system using his
+ 
+\shape italic
+username
+\shape default
+ and 
+\shape italic
+password
+\shape default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Credentials
+\family default
+ object (with the correct combination of 
+\shape italic
+username
+\shape default
+ and 
+\shape italic
+password
+\shape default
+ of the user)
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The user is logged in.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+checkCredentials(Credentials)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function verifies the 
+\shape italic
+username
+\shape default
+ - 
+\shape italic
+password
+\shape default
+ combination is correct.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+Credentials
+\family default
+ instance with a wrong combination of 
+\shape italic
+username
+\shape default
+ and 
+\shape italic
+password
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns 
+\family typewriter
+false
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Credentials
+\family default
+ instance (with the correct combination of 
+\shape italic
+username
+\shape default
+ and 
+\shape italic
+password
+\shape default
+ of the user)
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns 
+\family typewriter
+true
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+Main functions implemented by the 
+\series bold
+AccountInformation Manager
+\series default
+:
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+removeUser(User)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function deletes the 
+\family typewriter
+User
+\family default
+ from the system.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An existent and valid 
+\family typewriter
+User
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The 
+\family typewriter
+User
+\family default
+  is correctly removed.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+activate(User)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function restores the privileges of the 
+\family typewriter
+User
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An active 
+\family typewriter
+User
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A deactivated 
+\family typewriter
+User
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The 
+\family typewriter
+User
+\family default
+ is no more a deactivated 
+\family typewriter
+User
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+deactivate(User)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function removes some of the privileges from the 
+\family typewriter
+User
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A deactivated 
+\family typewriter
+User
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An active 
+\family typewriter
+User
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The 
+\family typewriter
+User
+\family default
+ is no more an active User.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+editProfile(User, UserData)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function updates the existent 
+\family typewriter
+User
+\family default
+ instance in the system with all the new information provided by the 
+\family typewriter
+UserData
+\family default
+ object.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An incomplete set of information
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A full set of information about the 
+\family typewriter
+User
+\family default
+ instance (
+\shape italic
+address
+\shape default
+, 
+\shape italic
+password
+\shape default
+, 
+\shape italic
+billing information
+\shape default
+, 
+\shape italic
+license number
+\shape default
+, ...)
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The 
+\family typewriter
+User
+\family default
+ data is correctly updated in the database.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+getHistory(User)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function allows a registered 
+\family typewriter
+User
+\family default
+ to consult his complete requests history.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An existent and valid 
+\family typewriter
+User
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns a list of all the requests of the 
+\family typewriter
+User
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+enableMSO(User)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function enables the Money Saving Option for the 
+\family typewriter
+User
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An existent and valid 
+\family typewriter
+User
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The MSO of the 
+\family typewriter
+User
+\family default
+ is enabled.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+disableMSO(User)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function disables the Money Saving Option for the 
+\family typewriter
+User
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An existent and valid 
+\family typewriter
+User
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The MSO of the 
+\family typewriter
+User
+\family default
+ is disabled.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Car Management
+\end_layout
+
+\begin_layout Standard
+Main functions implemented by the 
+\series bold
+ADS_Application Manager
+\series default
+:
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+getStatus()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function asks the ADS to check the current 
+\family typewriter
+Status
+\family default
+ (
+\shape slanted
+available
+\shape default
+, 
+\shape slanted
+reserved
+\shape default
+, 
+\shape slanted
+in_use
+\shape default
+, 
+\shape slanted
+unavailable
+\shape default
+) of the car.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+None
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns the car 
+\family typewriter
+Status
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+getDamages()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function queries the ADS to check the eventual car’s damages through
+ the sensors installed in there.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+None
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns a report with the eventual car's damages.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+getPosition()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function queries the ADS to check the current position of the car.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+None
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns the current 
+\family typewriter
+Location
+\family default
+ of the car.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+getPassengers()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function queries the ADS the number of passengers actually inside the
+ car.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+None
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns the number of passengers actually inside the car.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+checkPowerGrid()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function queries the ADS to check if the car is plugged into the power
+ grid.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+None
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns 
+\family typewriter
+true
+\family default
+ if the car is plugged into the power grid, 
+\family typewriter
+false
+\family default
+ otherwise.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+lockDoors()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function queries the ADS the lock the car’s doors and to change the
+ 
+\family typewriter
+Status
+\family default
+ of the car into 
+\shape slanted
+available
+\shape default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+None
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The doors are locked and the status of the car is updated into 
+\shape slanted
+available
+\shape default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+unlockDoors()
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function queries the ADS the unlock the car’s doors and to change the
+ 
+\family typewriter
+Status
+\family default
+ of the car into 
+\shape slanted
+in_use
+\shape default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+None
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The doors are unlocked and the status of the car is updated into 
+\shape slanted
+in_use
+\shape default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+updateCarStatus(Status)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function queries the ADS to change the car’s 
+\family typewriter
+Status
+\family default
+ into the one passed as argument.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Status
+\family default
+ object
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The car's status is updated according to the 
+\family typewriter
+Status
+\family default
+ object.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+Main functions implemented by the 
+\series bold
+Car Manager
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+contactMaintainanceService(Car)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Every time the Car Manager retrieve information about a car’s status, if
+ necessary, it will send a maintainance request to an external service through
+ this function.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Car
+\family default
+ object
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A maintainance request to an external service is successfully sent for the
+ specified 
+\family typewriter
+Car
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ping(Car)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function queries a 
+\family typewriter
+Car
+\family default
+ to check whether it is online.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Car
+\family default
+ object
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid query is sent to the 
+\family typewriter
+Car
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+carsInRadius(Location)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function retrieves all the cars near the 
+\family typewriter
+Location
+\family default
+ passed as argument.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Location
+\family default
+ object
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns a list of 
+\shape italic
+available
+\shape default
+ cars parked around the 
+\family typewriter
+Location
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Requests Management SubSystem
+\end_layout
+
+\begin_layout Standard
+Main functions implemented by the
+\series bold
+ CheckAvailability Manager
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+getUserPosition(User)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function will retrieve the information about the user’s position through
+ the Google Maps API.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+User
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+Location
+\family default
+ object is returned representing the current position of the user.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+getAvailableCars(Location)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function will retrieve the needed information through the Car Manager
+ and it will return a list of 
+\shape italic
+available
+\shape default
+ cars near the user's 
+\family typewriter
+Location
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Location
+\family default
+ object
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns a list of available cars parked near the 
+\family typewriter
+Location
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+Main functions implemented by the
+\series bold
+ Reservation Manager
+\series default
+:
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+checkVerificationCode(User, int)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function verifies the 
+\family typewriter
+User
+\family default
+ - 
+\shape italic
+verification
+\shape default
+ 
+\shape italic
+code
+\shape default
+ combination is correct.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A wrong 
+\shape italic
+verification
+\shape default
+ 
+\shape italic
+code
+\shape default
+ of the 
+\family typewriter
+User
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns 
+\family typewriter
+false
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The correct 
+\shape italic
+verification
+\shape default
+ 
+\shape italic
+code
+\shape default
+ of the 
+\family typewriter
+User
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns 
+\family typewriter
+true
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+getUserPosition(User)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function will retrieve the information about the user’s position through
+ the Google Maps API.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+User
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns a 
+\family typewriter
+Location
+\family default
+ object representing the current position of the 
+\family typewriter
+User
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+getReservableCars(Location)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function will retrieve the needed information through the Car Manager
+ and it will return a list of 
+\shape italic
+reservable
+\shape default
+ cars near the user's 
+\family typewriter
+Location
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Location
+\family default
+ object
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns a list of 
+\shape italic
+reservable
+\shape default
+ cars parked near the 
+\family typewriter
+Location
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+startReservation(Car, User)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function creates a new instance of 
+\family typewriter
+Reservation
+\family default
+, tying together the 
+\family typewriter
+Car
+\family default
+ and 
+\family typewriter
+User
+\family default
+ instances passed as argument, and notifies it to the 
+\family typewriter
+User
+\family default
+ through the Notification Manager.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Valid 
+\family typewriter
+User
+\family default
+ and 
+\family typewriter
+Car
+\family default
+ instances
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A new instance of 
+\family typewriter
+Reservation
+\family default
+ is correctly created.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+checkReservationStatus(Reservation)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function retrieves all the information about the 
+\family typewriter
+Reservation
+\family default
+ instance passed as argument, and shows them to the 
+\family typewriter
+User
+\family default
+ through the Notification Manager.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Reservation
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns the current status of the 
+\family typewriter
+Reservation
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+endReservation(Reservation)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function terminates the current 
+\family typewriter
+Reservation
+\family default
+, notifies it to the user through the Notification Manager and sends a payment
+ request to the Payment Manager.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Reservation
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The state of the 
+\family typewriter
+Reservation
+\family default
+ is changed into 
+\shape italic
+terminated
+\shape default
+, and the reservation is no more active.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+startRent(Reservation)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function creates a new instance of 
+\family typewriter
+Rent
+\family default
+, updating the 
+\family typewriter
+Reservation
+\family default
+ instance passed as argument, and notifies it to the 
+\family typewriter
+User
+\family default
+ through the Notification Manager.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Reservation
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A new instance of 
+\family typewriter
+Rent
+\family default
+ is correctly created.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+checkRentStatus(Rent)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function retrieves all the information about the 
+\family typewriter
+Rent
+\family default
+ instance passed as argument, and shows them to the 
+\family typewriter
+User
+\family default
+ through the Notification Manager.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Rent
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns the current status of the 
+\family typewriter
+Rent
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+isTerminable(Rent)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function will check through the Car Manager if all the conditions to
+ end the 
+\family typewriter
+Rent
+\family default
+ are respected (for example if nobody is still in the car, and so on..) and
+ it will return 
+\family typewriter
+true
+\family default
+ if the rent is terminable, 
+\family typewriter
+false
+\family default
+ otherwise.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Rent
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Returns 
+\family typewriter
+true
+\family default
+ if the rent is terminable, 
+\family typewriter
+false
+\family default
+ otherwise.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+endRent(Rent)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function terminates the current 
+\family typewriter
+Rent
+\family default
+, notifies it to the user through the Notification Manager and sends a payment
+ request to the Payment Manager.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Rent
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The state of the 
+\family typewriter
+Rent
+\family default
+ instance is changed into 
+\shape italic
+terminated
+\shape default
+, and the rent is no more active.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Events Handler
+\end_layout
+
+\begin_layout Standard
+Main functions implemented by the
+\series bold
+ Notification Manager
+\series default
+:
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+notify(User, Notification)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function is used to notify a message to the user.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Valid 
+\family typewriter
+User
+\family default
+ and 
+\family typewriter
+Notification
+\family default
+ instances
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The notification message is correctly displayed to the user.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+Main functions implemented by the
+\series bold
+ Payment Manager
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+applyReservationFees(Reservation)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function applies the fees for a 
+\family typewriter
+Reservation
+\family default
+ instance.
+ Now the user can terminate a reservation for free, but in the future if
+ PowerEnjoy would decide to apply a fee for the termination of a reservation,
+ it would be easy to modify this value.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Reservation
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A payment request to an external service is sent for the 
+\family typewriter
+User
+\family default
+ related to the current 
+\family typewriter
+Reservation
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+calculateRentFees(Rent)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function calculates the fees for a 
+\family typewriter
+Rent
+\family default
+ instance taking in account eventual discounts and other additional fees
+ before sending the payment request.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Rent
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function first updates the total cost of the 
+\family typewriter
+Rent
+\family default
+ and then sends a payment request to an external service for the 
+\family typewriter
+User
+\family default
+ related to the current 
+\family typewriter
+Rent
+\family default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+calculateRentDiscount(Rent)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function will calculate the eventual discount for each 
+\family typewriter
+Rent
+\family default
+ instance.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Rent
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The total cost of the 
+\family typewriter
+Rent
+\family default
+ will be successfully updated according to the eventual discounts.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle" tabularwidth="70page%">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+calculateAdditionalFees(Rent)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="36col%">
+<column alignment="left" valignment="top" width="50col%">
+<row topspace="1pt" bottomspace="1pt">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+This function will calculate the eventual additional fees for each 
+\family typewriter
+Rent
+\family default
+ instance.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="1pt">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Input Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+null
+\family default
+ parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\family typewriter
+NullArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An invalid object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An 
+\family typewriter
+InvalidArgumentException
+\family default
+ is raised.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="1pt" bottomspace="2pt">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A valid 
+\family typewriter
+Rent
+\family default
+ instance
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="0.5pt" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The total cost of the 
+\family typewriter
+Rent
+\family default
+ will be successfully updated according to the eventual additional fees.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\series bold
+Tools and Test Equipment Required
+\end_layout
+
+\begin_layout Standard
+This section presents all the 
+\series bold
+tools and test equipment
+\series default
+ needed to accomplish the integration.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+JUnit 
+\end_layout
+
+\begin_layout Standard
+JUnit is a simple, open source framework to write and run repeatable tests.
+ It is an instance of the xUnit architecture for unit testing frameworks.
+ JUnit features include:
+\end_layout
+
+\begin_layout Itemize
+Assertions for testing expected results 
+\end_layout
+
+\begin_layout Itemize
+Test fixtures for sharing common test data
+\end_layout
+
+\begin_layout Itemize
+Test runners for running tests
+\end_layout
+
+\begin_layout Subsubsection*
+JMockit
+\end_layout
+
+\begin_layout Standard
+JMockit is open source library meant to be used together with JUnit's testing
+ framework.
+ It includes APIs for mocking, faking, and integration testing, and a code
+ coverage tool.
+\end_layout
+
+\begin_layout Subsubsection*
+Arquillian 
+\end_layout
+
+\begin_layout Standard
+Arquillian is a highly extensible testing platform for the JVM that ease
+ the creation of automated integration, functional and acceptance tests
+ for Java middleware.
+\end_layout
+
+\begin_layout Standard
+Arquillian is an integration testing framework for business objects that
+ are executed inside a container or that interact with the container as
+ a client.
+ It also integrates with JUnit, allowing tests to be launched using existing
+ IDE, Ant and Maven test plugins.
+ Arquillian shines by turning integration testing no more complicated than
+ unit testing.
+\end_layout
+
+\begin_layout Subsubsection*
+Cellular Phones 
+\end_layout
+
+\begin_layout Standard
+The application will be deployed also as a mobile application for customers
+ using 
+\series bold
+Android
+\series default
+ and 
+\series bold
+iOS
+\series default
+.
+ In order to test these two radically different environments, at least two
+ devices running these aforementioned OSes are needed.
+ Specifically: 
+\end_layout
+
+\begin_layout Standard
+• Android phones will run 
+\series bold
+Kitkat
+\series default
+ or superior
+\end_layout
+
+\begin_layout Standard
+• iOS phones will run
+\series bold
+ iOS 8
+\series default
+ or superior
+\end_layout
+
+\begin_layout Standard
+• Each phone must have a 
+\series bold
+working Internet connection
+\series default
+ and a 
+\series bold
+GPS
+\series default
+ system enabled 
+\end_layout
+
+\begin_layout Subsubsection*
+PCs 
+\end_layout
+
+\begin_layout Standard
+In addition to the mobile application, a web app will be deployed.
+ In order to test it, a personal computer must be used; several browsers
+ are used, such as 
+\series bold
+Google Chrome, Mozilla Firefox, Internet Explorer / Edge 
+\series default
+and
+\series bold
+ Safari
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\series bold
+Program Stubs and Test Data Required
+\end_layout
+
+\begin_layout Standard
+This section presents all the
+\series bold
+ program stubs 
+\series default
+and
+\series bold
+ test data
+\series default
+ needed to accomplish the integration.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Test Server
+\end_layout
+
+\begin_layout Standard
+A working Glassfish test server is needed in order to properly host the
+ Application server.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Test Database
+\end_layout
+
+\begin_layout Standard
+The target environment must have a fully working and configured DBMS along
+ with test data and tables reflecting the classes and the relations described
+ in the ER diagram shown in the Design Document.
+ This database will contain mixed valid and invalid data.
+\end_layout
+
+\begin_layout Subsubsection*
+Fake GPS data
+\end_layout
+
+\begin_layout Standard
+A set of fake GPS coordinates is needed to test both users and cars in our
+ environment which will span inside and outside of mock cities.
+\end_layout
+
+\begin_layout Subsubsection*
+Test e-mail confirmation
+\end_layout
+
+\begin_layout Standard
+An email sender/receiver is needed in order to test and automate the email
+ confirmation process when a user signs up for the service.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+API client
+\end_layout
+
+\begin_layout Standard
+It is also necessary to simulate a client application which interacts with
+ the server through HTTP / HTTPS requests.
+ A command-line application should suffice.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Appendix
+\end_layout
+
+\begin_layout Subsection
+Tools used
+\end_layout
+
+\begin_layout Standard
+We used the following tools to produce this document:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+LaTex
+\series default
+ as typesetting system to write this document
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+LyX
+\series default
+ as editor
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Visio Professional
+\series default
+ and 
+\series bold
+draw.io
+\series default
+ to draw all the diagrams
+\end_layout
+
+\begin_layout Subsection
+Hours of work
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="14" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Colaci
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+De Pasquale
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rinaldi
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28/12/16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29/12/16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30/12/16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31/12/16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3/1/17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4/1/17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6/1/17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7/1/17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8/1/17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9/1/17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10/1/17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11/1/17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14/1/17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
