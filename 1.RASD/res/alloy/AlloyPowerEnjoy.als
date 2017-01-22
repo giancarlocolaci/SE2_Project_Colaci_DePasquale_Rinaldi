@@ -8,9 +8,8 @@ sig Float {
 		leftPart : one Int,
 		rightPart : one Int
 } {
-		leftPart > 0
-		rightPart > 0
-}
+		rightPart >= 0
+} 
 
 sig User {
 		id : one Int,
@@ -27,25 +26,25 @@ sig User {
 		moneySavingOption : one Bool,
 		request : set RMSS
 } {
-		id > 0
+		id >= 0
 }
 
 sig Car {
 		id : one Int,
 		plate : one Stringa,
 		wCode : one Int,
-		ecs : one ECS,
 		ads : one ADS,
+		location: one Location,
 		status : one CarStatus
 } {
-		id > 0
-		wCode > 0
+		id >= 0
+		wCode >= 0
 }
 
 abstract sig RMSS {
 		id : one Int,
 		startTime : one Int,
-		endTime : lone Int,
+		endTime : one Int,
 		cost : one Float,
 		status : one RequestStatus,
 		paymentStatus : one PaymentStatus,
@@ -54,14 +53,15 @@ abstract sig RMSS {
 		carPosition : one Stringa,
 		mSavingOption : one Bool,
 		car : one Car,
-		user : one User
+		user : one User,
+		events : set Event
 } {
-		id > 0
-		startTime > 0
-		endTime > 0
-		endTime = none or endTime > 0
-		userID > 0
-		endTime > startTime
+		id >= 0
+		startTime >= 0
+		endTime >= 0
+		endTime = none or endTime >= 0
+		userID >= 0
+		endTime >= startTime
 }
 
 sig Reservation extends RMSS {}
@@ -70,45 +70,61 @@ sig Rent extends RMSS {}
 
 sig DeactivatedUser extends User {}
 
-sig ECS {
-		id : one Int,
-} {
-		id > 0
-}
-
 sig ADS {
 		id : one Int
 } {
-		id > 0
+		id >= 0
 }
 
-sig ParkingArea {
-		id : one Int,
-		name : one Stringa,
-		availableCars : one Int,
-		car : set Car,
-		rechargingArea : set RechargingArea
+abstract sig Event {
+	id : one Int,
+	status: one Stringa,
+	rmss: one RMSS
 } {
-		id > 0
-		availableCars > 0
+	id >= 0
 }
 
-sig City {
-		id : one Int,
-		name : one Stringa,
-		parkingArea : set ParkingArea
+sig Payment extends Event {}
+
+sig Notification extends Event {
+	message: one Stringa
+}
+
+abstract sig Location {
+	id : one Int,
+	boundaries : set Int,
+	latitude : one Float,
+	longitude : one Float
 } {
-		id > 0
+	id >= 0
+	latitude.leftPart >= 0
+	longitude.leftPart >= 0
 }
 
-sig RechargingArea {
-		id : one Int,
+sig City extends Location {
+	name : one Stringa,
+	zipCode : one Int,
+	parArea : set ParkingArea
+} {
+		zipCode > 0
+}
+
+sig ParkingArea extends Location {
+	availableCars : one Int,
+	rechargingArea : one RechargingArea
+} {
+	availableCars >= 0
+}
+
+sig RechargingArea extends Location {
 		plugs : one Int,
-		address : one Stringa,
+		ranking : one Int,
+		maxRadius : one Int,
 		isSpecial : one Bool
 } {
-		id > 0
-		plugs > 0
+		plugs >= 0
+		ranking >= 0
+		maxRadius >= 0
 }
 
 // ENUMS
@@ -145,24 +161,18 @@ enum RequestStatus {
 
 //  In any city there is at least a parking area
 fact atLeastAParkingArea {
-		#ParkingArea >=  1
+		(all c : City | #c.parArea >=  1)
 }
-
 
 
 //  In any parking area there could be zero or more recharging area
 fact presenceOfRechargingArea {
-		#RechargingArea >=  0
+		(all p : ParkingArea | #p.rechargingArea >=  0)
 }
 
 //  In any parking area there could be zero or more cars
 fact presenceOfCars {
-		#Car >= 0
-}
-
-// No ECS with the same ID
-fact noDuplicatedECS {
-		(no ecs1 , ecs2 : ECS | ecs1.id = ecs2.id and ecs1 != ecs2)
+		(all p : ParkingArea | #p.availableCars >= 0)
 }
 
 // No ADS with the same ID
@@ -170,14 +180,10 @@ fact noDuplicatedADS {
 		(no ads1 , ads2 : ADS | ads1.id = ads2.id and ads1 != ads2)
 }
 
-// The same ECS cannot be used by two different Cars
-fact theSameECSCannotBeUsedByDifferentCars {
-		no disj c1, c2 : Car | c1.ecs = c2.ecs 
-}
 
 // The same ADS cannot be used by two different Cars
 fact theSameADSCannotBeUsedByDifferentCars {
-		no disj c1, c2 : Car | c1.ads = c2.ads
+		(no disj c1, c2 : Car | c1.ads = c2.ads)
 }
 
 // No Duplicated Users
@@ -188,11 +194,30 @@ fact noDuplicatedUser {
 		(no u1 , u2 : User | u1.drivingLicence = u2.drivingLicence and u1 != u2) 
 }
 
+// A reservation and its associated rent have the same user
+fact noPhantomResRent {
+	(all c : Car |  c.status = INUSE implies
+		(no res : Reservation, ren : Rent | res.car = c and ren.car = c and res.user != ren.user)
+	)
+}
 
+// No rent is possible if the reservation payment was denied or pending
+fact noRentIfPaymentUncertain {
+	(all c : Car, res : Reservation| c.status = INUSE and res.car = c and (res.paymentStatus = DENIED or res.paymentStatus = PENDING) implies 
+		(no ren : Rent | ren.car = c)
+	)
+}
 
 // No Users with NOTCONFIRMED Billing Information
 fact noUserWithNotConfirmedBilling {
 		no u : User | u.billingInformation = NOTCONFIRMED
+}
+
+// Every rent starts after every reservation
+fact noEarlyRent {
+	(all c : Car, res : Reservation, ren : Rent | c.status = INUSE and res.car = c and ren.car = c implies
+		ren.startTime >= res.endTime 
+	)
 }
 
 // No Cities with the same ID
@@ -260,6 +285,12 @@ fact pendingPaymentForActiveRequest {
 		(all r : RMSS | r.status = ACTIVE implies r.paymentStatus = PENDING)
 }
 
+// There are no duplicate payments
+fact noDuplicatePayments {
+	(all r1, r2 : RMSS | r1 != r2 and r1.paymentStatus = PENDING and r2.paymentStatus = PENDING implies
+		(all p1, p2 : Payment | p1 != p2 and p1 in r1.events and p2 in r2.events)	
+	)
+}
 // No Multiple Users for the same Request
 fact  noMultipleUsersForTheSameRequest {
 		 no disj u1, u2 : User | u1.request & u2.request != none
@@ -267,7 +298,9 @@ fact  noMultipleUsersForTheSameRequest {
 
 // The same Request cannot be performed by two different User
 fact noDifferentUserForTheSameRequest {
-		all r : RMSS | r in r.user.request
+		(all u1, u2 : User | u1 != u2 implies
+			(no r : RMSS | r in u1.request and r in u2.request)
+		)
 }
 
 // The same User cannot have two ACTIVE Requests

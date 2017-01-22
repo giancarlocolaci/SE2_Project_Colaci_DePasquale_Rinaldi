@@ -546,6 +546,144 @@ setcounter{page}{1}
 Introduction
 \end_layout
 
+\begin_layout Subsection
+Revision History
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle" tabularwidth="100text%">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="2pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Version
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Author(s)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Summary
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14/01/2017
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Giancarlo Colaci, Giulio De Pasquale, Francesco Rinaldi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Name refactoring
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12/12/2016
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Giancarlo Colaci, Giulio De Pasquale, Francesco Rinaldi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Initial Release
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Brief description
+\end_layout
+
 \begin_layout Standard
 This document describes design process for PowerEnjoy project based on the
  requirements described in the RASD.
@@ -706,8 +844,11 @@ JDBC: Java Database Connectivity, a Java API that allows the application
 \end_layout
 
 \begin_layout Description
-JSF: JavaServer Faces, a Java specification for building component-based
- user interfaces for web applications.
+JSF: JavaServer Faces, a Java specification foRevision History
+\end_layout
+
+\begin_layout Description
+r building component-based user interfaces for web applications.
 \end_layout
 
 \begin_layout Description
@@ -1845,8 +1986,10 @@ Component interfaces
 \end_layout
 
 \begin_layout Standard
-This section shows what are the interfaces that the system provides to the
- world, defining the functionalities they offer and the needed inputs.
+In this section we're going to describe the interfaces through which the
+ various components of the system communicate.
+ For each interface we'll provide a short but exhaustive description of
+ the main exposed methods.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1868,32 +2011,16 @@ Authentication Manager
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{register}
-\end_layout
-
-\end_inset
-
-: This function creates a new entity 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{user}
-\end_layout
-
-\end_inset
-
- in the system with all the information provided by the user.
+\family typewriter
+register(UserData)
+\family default
+: This function creates a new 
+\family typewriter
+User
+\family default
+ instance in the system with all the information provided by the user during
+ the registration phase.
  If the entered data are correct, an email is sent to the user address to
  confirm the correct registration to the service.
 \begin_inset VSpace smallskip
@@ -1903,20 +2030,40 @@ texttt{user}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{login}
-\end_layout
-
+\family typewriter
+login(Credentials)
+\family default
+: This function allows any registered user to log into the system using
+ his 
+\shape italic
+username
+\shape default
+ and 
+\shape italic
+password
+\shape default
+.
+\begin_inset VSpace smallskip
 \end_inset
 
-: This function allows any registered user to log into the system using
- his username and password.
+
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+checkCredentials(Credentials)
+\family default
+: This function verifies the 
+\shape italic
+username
+\shape default
+ - 
+\shape italic
+password
+\shape default
+ combination is correct.
  If the credentials are correct, the function returns a token to be used
  in the future requests to identify the user.
  Otherwise, an error is returned.
@@ -1934,6 +2081,9 @@ Functions implemented by
 AccountInformation Manager
 \series default
 :
+\end_layout
+
+\begin_layout Standard
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -1941,22 +2091,15 @@ AccountInformation Manager
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{edit
-\backslash
-_profile}
-\end_layout
-
-\end_inset
-
-: This function allows registered users to edit their profile information.
- 
+\family typewriter
+remove(User)
+\family default
+: This function deletes the 
+\family typewriter
+User
+\family default
+ from the system.
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -1964,21 +2107,18 @@ _profile}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{enable
-\backslash
-_mso}
+\family typewriter
+activate(User)
+\family default
+: This function restores the privileges of the 
+\family typewriter
+User
+\family default
+.
 \end_layout
 
-\end_inset
-
-: This function allows registered users to enable the money saving option.
+\begin_layout Standard
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -1986,21 +2126,15 @@ _mso}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{disable
-\backslash
-_mso}
-\end_layout
-
-\end_inset
-
-: This function allows registered users to disable the money saving option.
+\family typewriter
+deactivate(User)
+\family default
+: This function removes some of the privileges from the 
+\family typewriter
+User
+\family default
+.
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -2008,21 +2142,67 @@ _mso}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{consult
-\backslash
-_history}
-\end_layout
-
+\family typewriter
+editProfile(User, UserData)
+\family default
+: This function updates the existent 
+\family typewriter
+User
+\family default
+ instance in the system with all the new information provided by the 
+\family typewriter
+UserData
+\family default
+ object.
+\begin_inset VSpace smallskip
 \end_inset
 
-: This function allows registered users to consult their reservation history.
+
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+getHistory(User)
+\family default
+: This function allows a registered 
+\family typewriter
+User
+\family default
+ to consult his complete requests history.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+enableMSO(User):
+\family default
+This function enables the Money Saving Option for the 
+\family typewriter
+User
+\family default
+.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+disableMSO(User):
+\family default
+This function disables the Money Saving Option for the 
+\family typewriter
+User
+\family default
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2047,23 +2227,11 @@ CheckAvailability Manager
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_user
-\backslash
-_position}
-\end_layout
-
-\end_inset
-
-: This function will retrieve the information about the user's position
+\family typewriter
+getUserPosition(User)
+\family default
+: This function will retrieve the information about the user’s position
  through the Google Maps API.
 \begin_inset VSpace smallskip
 \end_inset
@@ -2072,47 +2240,20 @@ _position}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_availability}
-\end_layout
-
-\end_inset
-
-: This function will send a request to the Car Manager in order to retrieve
- all the information about the cars' location and status nearby the current
- user.
-\begin_inset VSpace smallskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{show
-\backslash
-_map}
-\end_layout
-
-\end_inset
-
-: This function will first call the other function written above and then
- will send the information retrieved back to the user, showing him on a
- map his position and the location of the available cars very near to him.
+\family typewriter
+getAvailableCars(Location)
+\family default
+: This function will retrieve the needed information through the Car Manager
+ and it will return a list of 
+\shape italic
+available
+\shape default
+ cars near the user's 
+\family typewriter
+Location
+\family default
+.
 \end_layout
 
 \begin_layout Standard
@@ -2144,24 +2285,42 @@ Reservation Manager
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_user
-\backslash
-_position}
+\family typewriter
+checkVerificationCode(User, int)
+\family default
+: This function verifies the 
+\family typewriter
+User
+\family default
+ - 
+\shape italic
+verification
+\shape default
+ 
+\shape italic
+code
+\shape default
+ combination is correct.
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace smallskip
 \end_inset
 
-: This function will retrieve the information about the user's position
+
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+getUserPosition(User)
+\family default
+: This function will retrieve the information about the user’s position
  through the Google Maps API.
+\end_layout
+
+\begin_layout Standard
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -2169,346 +2328,20 @@ _position}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_reservability}
-\end_layout
-
-\end_inset
-
-: This function will send a request to the Car Manager in order to check
- if the current user can effectively reserve the selected car.
- 
-\begin_inset VSpace smallskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_terminabiity}
-\end_layout
-
-\end_inset
-
-: This function will send a request to the Car Manager in order to check
- if the current user can effectively terminate the active reservation or
- rent.
- 
-\begin_inset VSpace smallskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{start
-\backslash
-_reservation}
-\end_layout
-
-\end_inset
-
-: This function create a new istance of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{reservation}
-\end_layout
-
-\end_inset
-
+\family typewriter
+getReservableCars(Location)
+\family default
+: This function will retrieve the needed information through the Car Manager
+ and it will return a list of 
+\shape italic
+reservable
+\shape default
+ cars near the user's 
+\family typewriter
+Location
+\family default
 .
-\begin_inset VSpace smallskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{end
-\backslash
-_reservation}
-\end_layout
-
-\end_inset
-
-: This function will first 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_terminabiity}
-\end_layout
-
-\end_inset
-
- of the active reservation and only after receiving an affirmative response
- back it will end the current istance of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{reservation}
-\end_layout
-
-\end_inset
-
-.
- It will also call 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_reservation
-\backslash
-_status}
-\end_layout
-
-\end_inset
-
- and it will send a request to the Payment Manager with these last information
- retrieved.
-\begin_inset VSpace smallskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{start
-\backslash
-_rent}
-\end_layout
-
-\end_inset
-
-: This function create a new istance of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{rent}
-\end_layout
-
-\end_inset
-
-.
-\begin_inset VSpace smallskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{end
-\backslash
-_rent}
-\end_layout
-
-\end_inset
-
-: This function will first 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_terminabiity}
-\end_layout
-
-\end_inset
-
- of the active rent and only after receiving an affirmative response back
- it will end the current istance of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{rent}
-\end_layout
-
-\end_inset
-
-.
- It will also call 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_rent
-\backslash
-_status}
-\end_layout
-
-\end_inset
-
- and it will send a request to the Payment Manager with these last information
- retrieved.
-\begin_inset VSpace smallskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_reservation
-\backslash
-_status}
-\end_layout
-
-\end_inset
-
-: This function will retrieve all the information about the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{reservation}
-\end_layout
-
-\end_inset
-
- and it will send them back to the user.
-\begin_inset VSpace smallskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_rent
-\backslash
-_status}
-\end_layout
-
-\end_inset
-
-: This function will retrieve all the information about the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{rent}
-\end_layout
-
-\end_inset
-
- and it will send them back to the user.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\series bold
-Car Manager
-\end_layout
-
-\begin_layout Standard
-Functions implemented by 
-\series bold
-Car Manager
-\series default
-:
 \end_layout
 
 \begin_layout Standard
@@ -2519,23 +2352,27 @@ Car Manager
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{request
-\backslash
-_information}
-\end_layout
-
-\end_inset
-
-: This function will send a request to the ADS_Application Manager in order
- to retrieve a complete report about a car or just information about the
- position and the status of a car.
+\family typewriter
+startReservation(Car, User)
+\family default
+: This function creates a new instance of 
+\family typewriter
+Reservation
+\family default
+, tying together the 
+\family typewriter
+Car
+\family default
+ and 
+\family typewriter
+User
+\family default
+ instances passed as argument, and notifies it to the 
+\family typewriter
+User
+\family default
+ through the Notification Manager.
 \end_layout
 
 \begin_layout Standard
@@ -2546,51 +2383,22 @@ _information}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_reservability}
+\family typewriter
+checkReservationStatus(Reservation)
+\family default
+: This function retrieves all the information about the 
+\family typewriter
+Reservation
+\family default
+ instance passed as argument, and shows them to the 
+\family typewriter
+User
+\family default
+ through the Notification Manager.
 \end_layout
 
-\end_inset
-
-: This function will first retrieve more information about the car recevied
- as input from the Reservation Manager and then will compare its location
- with the user's position.
- It will send back a 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{confirmation}
-\end_layout
-
-\end_inset
-
- only if the distance between the two entities is suitable and if the status
- of the selected car is still 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{available}
-\end_layout
-
-\end_inset
-
-.
+\begin_layout Standard
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -2598,23 +2406,18 @@ texttt{available}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_availability}
+\family typewriter
+endReservation(Reservation)
+\family default
+: This function terminates the current 
+\family typewriter
+Reservation
+\family default
+ and send a payment request to the Payment Manager.
 \end_layout
 
-\end_inset
-
-: This function will first check the user's position and then will send
- a request to the ADS_Application Manager in order to retrieve status and
- position of all the cars stored in the DataBase.
+\begin_layout Standard
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -2622,37 +2425,26 @@ _availability}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_terminability}
+\family typewriter
+startRent(Reservation)
+\family default
+: This function creates a new instance of 
+\family typewriter
+Rent
+\family default
+, updating the 
+\family typewriter
+Reservation
+\family default
+ instance passed as argument, and notifies it to the 
+\family typewriter
+User
+\family default
+ through the Notification Manager.
 \end_layout
 
-\end_inset
-
-: This function will first 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{request
-\backslash
-_information}
-\end_layout
-
-\end_inset
-
- and then will check if all the conditions to end the reservation or the
- rent are respected (for example if nobody is still in the car, and so on..).
+\begin_layout Standard
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -2660,25 +2452,22 @@ _information}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{contact
-\backslash
-_maintanance
-\backslash
-_service}
+\family typewriter
+checkRentStatus(Rent)
+\family default
+: This function retrieves all the information about the 
+\family typewriter
+Rent
+\family default
+ instance passed as argument, and shows them to the 
+\family typewriter
+User
+\family default
+ through the Notification Manager.
 \end_layout
 
-\end_inset
-
-: Every time the Car Manager retrieve information about a car's status,
- if necessary, it will send a request of maintanance to an external maintanance
- service through this function.
+\begin_layout Standard
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -2686,29 +2475,45 @@ _service}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{perform
-\backslash
-_action}
-\end_layout
-
-\end_inset
-
-: This function will send a request to the ADS_Application of a defined
- car in order to perform a precise action.
+\family typewriter
+isTerminable(Rent)
+\family default
+: This function will check through the Car Manager if all the conditions
+ to end the 
+\family typewriter
+Rent
+\family default
+ are respected (for example if nobody is still in the car, and so on..) and
+ it will return 
+\family typewriter
+true
+\family default
+ if the rent is terminable, 
+\family typewriter
+false
+\family default
+ otherwise.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
+\begin_inset VSpace smallskip
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+endRent(Rent)
+\family default
+: This function terminates the current 
+\family typewriter
+Rent
+\family default
+, notifies it to the user through the Notification Manager and sends a payment
+ request to the Payment Manager.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2723,241 +2528,153 @@ Functions implemented by
 ADS_Application Manager
 \series default
 :
+\end_layout
+
+\begin_layout Standard
 \begin_inset VSpace smallskip
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_status}
-\end_layout
-
-\end_inset
-
-: This function asks the ADS to check the current status (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{available, reserved, in
-\backslash
-_use, unavailable}
-\end_layout
-
-\end_inset
-
+\family typewriter
+getStatus()
+\family default
+: This function asks the ADS to check the current 
+\family typewriter
+Status
+\family default
+ (
+\shape slanted
+available
+\shape default
+, 
+\shape slanted
+reserved
+\shape default
+, 
+\shape slanted
+in_use
+\shape default
+, 
+\shape slanted
+unavailable
+\shape default
 ) of the car.
+\end_layout
+
+\begin_layout Standard
 \begin_inset VSpace smallskip
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_damages}
-\end_layout
-
-\end_inset
-
-: This function asks the ADS to check the eventual car's damages through
+\family typewriter
+getDamages()
+\family default
+: This function queries the ADS to check the eventual car’s damages through
  the sensors installed in there.
- If the ADS find any kind of anomalies, it will change the status of the
- car into 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{unavailable}
 \end_layout
 
-\end_inset
-
- and will notify it immedetiately to the Server application.
+\begin_layout Standard
 \begin_inset VSpace smallskip
 \end_inset
 
 
+\family typewriter
+getPosition)
+\family default
+: This function queries the ADS to check the current position of the car.
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_position}
-\end_layout
-
-\end_inset
-
-: This function asks the ADS to check the car's position.
 \begin_inset VSpace smallskip
 \end_inset
 
 
+\family typewriter
+getPassengers()
+\family default
+: This function queries the ADS the number of passengers actually inside
+ the car.
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_passengers}
-\end_layout
-
-\end_inset
-
-: This function asks the ADS the number of passengers actually inside the
- car.
 \begin_inset VSpace smallskip
 \end_inset
 
 
+\family typewriter
+getPowerGrid()
+\family default
+: This function queries the ADS to check if the car is plugged into the
+ power grid.
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{check
-\backslash
-_power
-\backslash
-_grid}
-\end_layout
-
-\end_inset
-
-: This function asks the ADS to check if the car is plugged into the power
- grid.
 \begin_inset VSpace smallskip
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{send
-\backslash
-_status
-\backslash
-_and
-\backslash
-_position}
-\end_layout
-
-\end_inset
-
-: This function asks the ADS to check status and position of a car and to
- send these information back to the Server application.
-\begin_inset VSpace smallskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{send
-\backslash
-_report}
-\end_layout
-
-\end_inset
-
-: This function asks the ADS to perform all the actions written above (that
- is check status, position, eventual damages and the number of eventual
- passengers inside the car) and to send these information back to the Server
- application.
-\begin_inset VSpace smallskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{lock
-\backslash
-_doors}
-\end_layout
-
-\end_inset
-
-: This function asks the ADS the lock the car's doors and to change the
- status of the car into 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{in
-\backslash
-_use}
-\end_layout
-
-\end_inset
-
+\family typewriter
+lockDoors()
+\family default
+: This function queries the ADS the lock the car’s doors and to change the
+ 
+\family typewriter
+Status
+\family default
+ of the car into 
+\shape slanted
+available
+\shape default
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\family typewriter
+unlockDoors()
+\family default
+: This function queries the ADS the unlock the car’s doors and to change
+ the 
+\family typewriter
+Status
+\family default
+ of the car into 
+\shape slanted
+in_use
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\family typewriter
+updateCarStatus(Status)
+\family default
+: This function queries the ADS to change the car’s 
+\family typewriter
+Status
+\family default
+ into the one passed as argument.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Car Manager
+\end_layout
+
+\begin_layout Standard
+Functions implemented by 
+\series bold
+Car Manager
+\series default
+:
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -2965,35 +2682,13 @@ _use}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{unlock
-\backslash
-_doors}
-\end_layout
-
-\end_inset
-
-: This function asks the ADS the unlock the car's doors and to change the
- status of the car into 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{available}
-\end_layout
-
-\end_inset
-
-.
+\family typewriter
+contactMaintainanceService(Car)
+\family default
+: Every time the Car Manager retrieve information about a car’s status,
+ if necessary, it will send a maintainance request to an external service
+ through this function.
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -3001,34 +2696,15 @@ texttt{available}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{start
-\backslash
-_reservation}
-\end_layout
-
-\end_inset
-
-: This function asks the ADS the change the car's status into 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{reserved}
-\end_layout
-
-\end_inset
-
-.
+\family typewriter
+ping(Car)
+\family default
+: This function queries a 
+\family typewriter
+Car
+\family default
+ to check whether it is online.
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -3036,34 +2712,15 @@ texttt{reserved}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{end
-\backslash
-_reservation}
-\end_layout
-
-\end_inset
-
-: This function asks the ADS the change the car's status into 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{available}
-\end_layout
-
-\end_inset
-
-.
+\family typewriter
+carsInRadius(Location)
+\family default
+: This function retrieves all the cars near the 
+\family typewriter
+Location
+\family default
+ passed as argument.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -3082,93 +2739,71 @@ Payment Manager
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{calculate
-\backslash
-_fees}
-\end_layout
-
-\end_inset
-
-: This function will use all the information retrieved as input about the
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{reservation}
-\end_layout
-
-\end_inset
-
- or about the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{rent}
-\end_layout
-
-\end_inset
-
- to calculate the total fees, and then will call 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{contact
-\backslash
-_payment
-\backslash
-_service}
-\end_layout
-
-\end_inset
-
+\family typewriter
+applyReservationFees(Reservation)
+\family default
+: This function will apply the fees for each 
+\family typewriter
+Reservation
+\family default
+ instance.
+ Actually, the user can terminate a reservation for free, but in the future
+ if PowerEnjoy would decide to apply a fee for the termination of a reservation,
+ it would be very easy to modify this value.
+ If the user picks up the car, his reservation terminates and the system
+ will create another instance 
+\family typewriter
+Rent
+\family default
+: no fees will be applied to transform a 
+\family typewriter
+Reservation
+\family default
+ into a 
+\family typewriter
+Rent
+\family default
 .
- 
 \begin_inset VSpace smallskip
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{contact
-\backslash
-_payment
-\backslash
-_service}
-\end_layout
-
+\family typewriter
+calculateRentFees(Rent)
+\family default
+: This function will calculate the fees for each 
+\family typewriter
+Rent
+\family default
+ instance.
+ In this case we have to consider eventual discounts and other additional
+ fees before sending the payment request to the external payment service.
+ It would not be difficult in the future to change some parameters according
+ to the PowerEnjoy policy.
+\begin_inset VSpace smallskip
 \end_inset
 
-: This function send a request of payment to the external payment service.
+
+\family typewriter
+calculateRentDiscount(Rent)
+\family default
+: This function will calculate the eventual discount for each 
+\family typewriter
+Rent
+\family default
+ instance.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\family typewriter
+calculateAdditionalFees(Rent)
+\family default
+: This function will calculate the eventual additional fees for each 
+\family typewriter
+Rent
+\family default
+ instance.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -3190,20 +2825,10 @@ Data Manager
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{store
-\backslash
-_data}
-\end_layout
-
-\end_inset
-
+\family typewriter
+store(Data)
+\family default
 : This function allows any authorized entity to store data into the DataBase.
  
 \begin_inset VSpace smallskip
@@ -3213,21 +2838,11 @@ _data}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{retrieve
-\backslash
-_data}
-\end_layout
-
-\end_inset
-
-: This function allows any authorized entity to read data from the DataBase.
+\family typewriter
+retrieve(Data)
+\family default
+:: This function allows any authorized entity to read data from the DataBase.
  
 \begin_inset VSpace smallskip
 \end_inset
@@ -3236,21 +2851,11 @@ _data}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{delete
-\backslash
-_data}
-\end_layout
-
-\end_inset
-
-: This function allows any authorized entity to delete data from the DataBase.
+\family typewriter
+delete(Data)
+\family default
+:: This function allows any authorized entity to delete data from the DataBase.
  
 \begin_inset VSpace smallskip
 \end_inset
@@ -3259,21 +2864,11 @@ _data}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{modify
-\backslash
-_data}
-\end_layout
-
-\end_inset
-
-: This function allows any authorized entity to modify data into the DataBase.
+\family typewriter
+edit(Data)
+\family default
+:: This function allows any authorized entity to modify data into the DataBase.
  
 \end_layout
 
@@ -3296,20 +2891,11 @@ Notification Manager
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-texttt{notify}
-\end_layout
-
-\end_inset
-
-: This function is used by all the authorized entities to communicate between
- each other.
+\family typewriter
+notify(User, Notification)
+\family default
+: This function is used to notify a message to the user.
 \end_layout
 
 \begin_layout Standard
@@ -3932,7 +3518,7 @@ In this way we would achieve our goal to distribute cars in the smartest
 \end_layout
 
 \begin_layout Subsection
-How to calculate the Reservation fees
+How to apply the Reservation fees
 \end_layout
 
 \begin_layout Standard
@@ -3941,7 +3527,7 @@ In this section we will analyze the structure of the code that will handle
 \end_layout
 
 \begin_layout Subparagraph*
-calculateReservationFees(Reservation)
+applyReservationFees(Reservation)
 \end_layout
 
 \begin_layout Standard
@@ -3967,16 +3553,16 @@ begin{lstlisting}
 
 \begin_layout Plain Layout
 
-/*   This function will calculate the fees for each reservation entity.
-  Actually, the user can terminate a reservation for free, but in the future
+/*   This function will apply the fees for each Reservation instance.
+ Actually, the user can terminate a reservation for free, but in the future
  if PowerEnjoy would decide to apply a fee for the termination of a reservation,
- it would be very easy to modify this function.
- If the user pick up the car, his reservation terminates and the system
- will create another object 'rent': no fees will be applied to transform
- a reservation into a rent.
- On the other hand, if the reservation expires before the user pick up the
- car, the system will apply to him a fee of one euro.
- As said before, it would not be difficult in the future also to change
+ it would be very easy to modify this value.
+ If the user picks up the car, his reservation terminates and the system
+ will create another object Rent: no fees will be applied to transform a
+ reservation into a rent.
+ On the other hand, if the reservation expires before the user picks up
+ the car, the system will apply to him a fee of one euro.
+  As said before, it would not be difficult in the future also to change
  this amount of money.
 \end_layout
 
@@ -3991,7 +3577,7 @@ begin{lstlisting}
 
 \begin_layout Plain Layout
 
-function calculateReservationFees (Reservation res){
+function applyReservationFees (Reservation res){
 \end_layout
 
 \begin_layout Plain Layout
@@ -4072,7 +3658,7 @@ In this section we will analyze the structure of the code that will handle
 \end_layout
 
 \begin_layout Subparagraph*
-calculateRentDiscount(Rent, float)
+calculateRentDiscount(Rent)
 \end_layout
 
 \begin_layout Standard
@@ -4098,7 +3684,7 @@ begin{lstlisting}
 
 \begin_layout Plain Layout
 
-/*   This function will calculate the eventual discount for each rent entity.
+/*   This function will calculate the eventual discount for each rent instance.
    */
 \end_layout
 
@@ -4108,7 +3694,7 @@ begin{lstlisting}
 
 \begin_layout Plain Layout
 
-float function calculateRentDiscount(Rent ren, float totalCost){
+void function calculateRentDiscount(Rent ren){
 \end_layout
 
 \begin_layout Plain Layout
@@ -4128,7 +3714,7 @@ float function calculateRentDiscount(Rent ren, float totalCost){
 
 \begin_layout Plain Layout
 
-		actualCost = actualCost * 0.9;
+		ren.totalCost *= 0.9;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4158,7 +3744,7 @@ float function calculateRentDiscount(Rent ren, float totalCost){
 
 \begin_layout Plain Layout
 
-		actualCost = actualCost * 0.8;
+		ren.totalCost *= 0.8;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4204,7 +3790,7 @@ float function calculateRentDiscount(Rent ren, float totalCost){
 
 \begin_layout Plain Layout
 
-			actualCost = actualCost * 0.6;
+			ren.totalCost *= 0.6;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4226,7 +3812,7 @@ float function calculateRentDiscount(Rent ren, float totalCost){
 
 \begin_layout Plain Layout
 
-			actualCost = actualCost * 0.7;
+			ren.totalCost *= 0.7;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4262,7 +3848,7 @@ float function calculateRentDiscount(Rent ren, float totalCost){
 
 \begin_layout Plain Layout
 
-			actualCost = actualCost * 0.7;
+			ren.totalCost *= 0.7;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4278,15 +3864,6 @@ float function calculateRentDiscount(Rent ren, float totalCost){
 \begin_layout Plain Layout
 
 	}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	return totalCost;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4311,7 +3888,7 @@ end{lstlisting}
 \end_layout
 
 \begin_layout Subparagraph*
-calculateAdditionalFee(Rent, float)
+calculateAdditionalFees(Rent)
 \end_layout
 
 \begin_layout Standard
@@ -4337,7 +3914,7 @@ begin{lstlisting}
 
 \begin_layout Plain Layout
 
-/*   This function will calculate the additional fees for each rent entity.
+/*   This function will calculate the additional fees for each rent instance.
    */
 \end_layout
 
@@ -4347,11 +3924,7 @@ begin{lstlisting}
 
 \begin_layout Plain Layout
 
-float function calculateAdditionalFee(Rent ren, float totalCost){
-\end_layout
-
-\begin_layout Plain Layout
-
+void function calculateAdditionalFees(Rent ren){
 \end_layout
 
 \begin_layout Plain Layout
@@ -4377,7 +3950,7 @@ float function calculateAdditionalFee(Rent ren, float totalCost){
 
 \begin_layout Plain Layout
 
-		actualCost = actualCost * 1.3;
+		ren.totalCost *= 1.3;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4388,15 +3961,6 @@ float function calculateAdditionalFee(Rent ren, float totalCost){
 \begin_layout Plain Layout
 
 	}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-return totalCost;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4447,7 +4011,7 @@ begin{lstlisting}
 
 \begin_layout Plain Layout
 
-/*   This function will calculate the fees for each rent entity.
+/*   This function will calculate the fees for each Rent instance.
   In this case we have to consider eventual discounts and other additional
  fees before sending the payment request to the external payment service.
  It would not be difficult in the future to change some parameters according
@@ -4470,22 +4034,7 @@ function calculateRentFees (Rent ren){
 
 \begin_layout Plain Layout
 
-	
-\end_layout
-
-\begin_layout Plain Layout
-
-	float totalCost = 0.0;
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\end_layout
-
-\begin_layout Plain Layout
-
-	totalCost = ren.report.totalTime * ren.report.pricePerMinute;
+	ren.totalCost = ren.report.totalTime * ren.report.pricePerMinute;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4502,7 +4051,7 @@ function calculateRentFees (Rent ren){
 
 \begin_layout Plain Layout
 
-	totalCost = calculateRentDiscount(ren, totalCost);
+	calculateRentDiscount(ren);
 \end_layout
 
 \begin_layout Plain Layout
@@ -4516,7 +4065,7 @@ function calculateRentFees (Rent ren){
 
 \begin_layout Plain Layout
 
-	totalCost = calulateAdditionalFee(ren, totalCost);
+	calculateAdditionalFees(ren);
 \end_layout
 
 \begin_layout Plain Layout
@@ -4530,7 +4079,7 @@ function calculateRentFees (Rent ren){
 
 \begin_layout Plain Layout
 
-	paymentHandler(ren.User, totalCost);
+	paymentHandler(ren.User, ren.totalCost);
 \end_layout
 
 \begin_layout Plain Layout
@@ -5330,7 +4879,7 @@ Authentication Manager
 \begin_inset Text
 
 \begin_layout Plain Layout
-Account Information Manager
+AccountInformation Manager
 \end_layout
 
 \end_inset
@@ -5390,7 +4939,7 @@ Account Information Manager
 \begin_inset Text
 
 \begin_layout Plain Layout
-Check Availability Manager
+CheckAvailability Manager
 \end_layout
 
 \end_inset
@@ -6037,12 +5586,6 @@ Visio Professional
 draw.io
 \series default
  to draw all the diagrams
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Something Else
 \end_layout
 
 \begin_layout Subsection

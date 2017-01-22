@@ -513,6 +513,248 @@ Introduction
 \end_layout
 
 \begin_layout Subsection
+Revision History
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle" tabularwidth="80page%">
+<column alignment="center" valignment="middle" width="0pt">
+<column alignment="center" valignment="middle" width="0pt">
+<column alignment="center" valignment="middle" width="30col%">
+<column alignment="center" valignment="middle" width="40col%">
+<row topspace="2pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Version
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Author(s)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Summary
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22/01/2017
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Giancarlo Colaci 
+\begin_inset Newline newline
+\end_inset
+
+Giulio De Pasquale
+\begin_inset Newline newline
+\end_inset
+
+Francesco Rinaldi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Updated Alloy
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14/01/2017
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Giancarlo Colaci
+\begin_inset Newline newline
+\end_inset
+
+Giulio De Pasquale
+\begin_inset Newline newline
+\end_inset
+
+Francesco Rinaldi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Name refactoring, updated Class Diagram
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12/12/2016
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Giancarlo Colaci
+\begin_inset Newline newline
+\end_inset
+
+Giulio De Pasquale
+\begin_inset Newline newline
+\end_inset
+
+Francesco Rinaldi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Further details, new functional requirement
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2pt" bottomspace="2pt">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14/11/2016
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Giancarlo Colaci
+\begin_inset Newline newline
+\end_inset
+
+Giulio De Pasquale
+\begin_inset Newline newline
+\end_inset
+
+Francesco Rinaldi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Initial Release
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Description of the given problem 
 \end_layout
 
@@ -735,8 +977,7 @@ ADS: Auto Diagnosis System, an always on embedded peripheral which continuously
 
 \begin_layout Description
 ECS: Emergency Call System, an always on embedded peripheral which can be
- used to call the consumer service or an emergency number quickly [ANCHE
- QUESTO ELEMENTO AUMENTA LA COMPLESSITA' DEL TUTTO: IO PROPONGO DI RIMUOVERLO.]
+ used to call the consumer service or an emergency number quickly
 \end_layout
 
 \begin_layout Description
@@ -958,10 +1199,7 @@ Check available cars' position and status;
 \end_layout
 
 \begin_layout Itemize
-Contact the customer service[OCCORRE SPECIFICARE CHE NON VI È ALCUN SERVIZIO
- DI LIVE CHAT, O COMUNQUE DI TIZI CHE TI RISPONDONO SE TU SCRIVI LORO: IO
- DIREI DI SEMPLIFICARE ED ELIMINARE SEMPLICEMENTE QUESTA VOCE, CON TUTTE
- POI LE RIPETIZIONI IN QUESTO E ALTRI DOCUMENTI];;
+Contact the customer service;
 \end_layout
 
 \begin_layout Subsubsection
@@ -1039,10 +1277,7 @@ Terminate the rent;
 \end_layout
 
 \begin_layout Itemize
-Contact the customer service [OCCORRE SPECIFICARE CHE NON VI È ALCUN SERVIZIO
- DI LIVE CHAT, O COMUNQUE DI TIZI CHE TI RISPONDONO SE TU SCRIVI LORO: IO
- DIREI DI SEMPLIFICARE ED ELIMINARE SEMPLICEMENTE QUESTA VOCE, CON TUTTE
- POI LE RIPETIZIONI IN QUESTO E ALTRI DOCUMENTI];
+Contact the customer service;
 \end_layout
 
 \begin_layout Subsubsection
@@ -1086,10 +1321,7 @@ Check available cars' position and status;
 \end_layout
 
 \begin_layout Itemize
-Contact the customer service [OCCORRE SPECIFICARE CHE NON VI È ALCUN SERVIZIO
- DI LIVE CHAT, O COMUNQUE DI TIZI CHE TI RISPONDONO SE TU SCRIVI LORO: IO
- DIREI DI SEMPLIFICARE ED ELIMINARE SEMPLICEMENTE QUESTA VOCE, CON TUTTE
- POI LE RIPETIZIONI IN QUESTO E ALTRI DOCUMENTI];
+Contact the customer service;
 \end_layout
 
 \begin_layout Standard
@@ -4307,6 +4539,14 @@ Here it is shown a class diagram in order to give a static sight of the
 \end_layout
 
 \begin_layout Standard
+This diagram is intended as a starting draft to be expanded further in the
+ design phase: moreover, it doesn't represent the final class infrastructure
+ which will be used in our system.
+ Finally, this diagram doesn't include the classes that will be used in
+ the Mobile/Web applications.
+\end_layout
+
+\begin_layout Standard
 \begin_inset space \quad{}
 \end_inset
 
@@ -5237,9 +5477,10 @@ Here are presented three generated worlds, according to the model speciﬁed
 \end_layout
 
 \begin_layout Standard
-\begin_inset External
-	template PDFPages
-	filename res/img/alloy_mondo_1.pdf
+\align center
+\begin_inset Graphics
+	filename res/img/world1.png
+	height 100theight%
 	rotateAngle 90
 
 \end_inset
@@ -5255,9 +5496,10 @@ Here are presented three generated worlds, according to the model speciﬁed
 \end_layout
 
 \begin_layout Standard
-\begin_inset External
-	template PDFPages
-	filename res/img/alloy_mondo_3.pdf
+\align center
+\begin_inset Graphics
+	filename res/img/world2.png
+	height 100theight%
 	rotateAngle 90
 
 \end_inset
@@ -5273,9 +5515,10 @@ Here are presented three generated worlds, according to the model speciﬁed
 \end_layout
 
 \begin_layout Standard
-\begin_inset External
-	template PDFPages
-	filename res/img/alloy_mondo_2.pdf
+\align center
+\begin_inset Graphics
+	filename res/img/world3.png
+	height 100theight%
 	rotateAngle 90
 
 \end_inset
